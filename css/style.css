@@ -2327,7 +2327,7 @@ footer{
     
     .tienda1 .titulo{
         font-size: 18px;
-        color: rgb(138, 131, 31);
+        
     }
     
     .tienda2{
@@ -2342,13 +2342,18 @@ footer{
     
     
     .tienda2 img{
-        width: 100%;
-        padding-right: 15px;
+        
+        height: 250px;
         
     }
 
     .tienda2 p{
         font-size: 12px;
+    }
+
+    .tienda2 .titulo{
+        font-size: 18px;
+        
     }
     
     .tienda3{
@@ -2360,13 +2365,17 @@ footer{
         margin-right: 70px;
     }
     .tienda3 img{
-        width: 100%;
-        padding-right: 15px;
+        height: 250px;
         
     }
 
     .tienda3 p{
         font-size: 12px;
+    }
+
+    .tienda3 .titulo{
+        font-size: 18px;
+        
     }
     
     .tienda4{
@@ -2379,9 +2388,8 @@ footer{
         
     }
     .tienda4 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
+        
+        height: 250px;
         
     }
 
@@ -2389,6 +2397,10 @@ footer{
         font-size: 12px;
     }
     
+    .tienda4 .titulo{
+        font-size: 18px;
+        
+    }
     
     .tienda5{
         
@@ -2401,14 +2413,19 @@ footer{
     }
     
     .tienda5 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
+        
+        height: 250px;
     }
 
     .tienda5 p{
         font-size: 12px;
     }
+
+    .tienda5 .titulo{
+        font-size: 18px;
+        
+    }
+    
     
     
     .tienda6{
@@ -2422,15 +2439,19 @@ footer{
     
     
     .tienda6 img{
-        width: 100%;
-        padding-right: 15px;
+        height: 250px;
         
     }
 
     .tienda6 p{
         font-size: 12px;
     }
+    .tienda6 .titulo{
+        font-size: 18px;
+        
+    }
     
+
     .tienda7{
         
         width: 220px;
@@ -2440,14 +2461,18 @@ footer{
         margin-right: 70px;
     }
     .tienda7 img{
-        width: 100%;
-        padding-right: 15px;
-        
+        height: 250px;
     }
 
     .tienda7 p{
         font-size: 12px;
     }
+
+    .tienda7 .titulo{
+        font-size: 18px;
+        
+    }
+    
     
     .tienda8{
         
@@ -2459,15 +2484,20 @@ footer{
         
     }
     .tienda8 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
+        
+        height: 250px;
         
     }
 
     .tienda8 p{
         font-size: 12px;
     }
+
+    .tienda8 .titulo{
+        font-size: 18px;
+        
+    }
+    
     
     .tienda9{
         
@@ -2481,14 +2511,19 @@ footer{
     }
     
     .tienda9 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
+
+        height: 250px;
     }
 
     .tienda9 p{
         font-size: 12px;
     }
+
+    .tienda9 .titulo{
+        font-size: 18px;
+        
+    }
+    
     
     
     .tienda_10{
@@ -2502,7 +2537,7 @@ footer{
     
     
     .tienda_10 img{
-        width: 100%;
+        height: 250px;
         
         
     }
@@ -2510,6 +2545,12 @@ footer{
     .tienda_10 p{
         font-size: 12px;
     }
+
+    .tienda_10 .titulo{
+        font-size: 18px;
+        
+    }
+    
     
     .tienda_11{
         
@@ -2521,13 +2562,17 @@ footer{
         
     }
     .tienda_11 img{
-        width: 100%;
-        padding-right: 15px;
-        
+        height: 250px;
     }
     .tienda_11 p{
         font-size: 12px;
     }
+
+    .tienda_11 .titulo{
+        font-size: 18px;
+        
+    }
+    
     
     .tienda_12{
         
@@ -2535,12 +2580,11 @@ footer{
         height: 450px;
         font-size: 18px;
         grid-column: 1/2;
-        margin-right: 70px;
+        margin-right: 70px
     }
     .tienda_12 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
+        
+        height: 250px;
         
     }
     
@@ -2549,94 +2593,270 @@ footer{
         font-size: 12px;
         
     }
+
+    .tienda_12 .titulo{
+        font-size: 18px;
+        
+    }
+    
     
 }
 
-@media only screen and (min-width: 380px) and (max-width: 480px) {
+@media only screen and (min-width: 375px) {
 
     .grid-tienda{
         display: grid;
-        grid-template-columns: 1fr  ;
-        grid-template-rows: auto ;
-        width: 80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 0;
+        grid-column: 1/2;
+        padding: 0;
         grid-gap: 10px;
-        align-content: center;
-        align-items: center;
-        margin-left: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         
 
     
     }
     
-    .prueba {
-        display: grid;
-        margin: auto;
-        width: 100%;
-        background-image: url(../imagenes/FondoTienda.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     
-    .subTitulo{
+    .subTitulo{    
+        font-size: 34px;
         
-        width: max-content;
-        font-size: 25px;
-        position: absolute;
-        left: 30%;
-        color: rgb(196, 196, 199);
-        top: 150px;
-        background-color: rgb(3, 3, 3);
-        border-radius: 12px;
-        border: solid;
-        border-color:rgb(153, 153, 67);
+        
     
     }
     
     .tienda1{
         
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 1/2;
         
+        width: 250px;
+        margin-right: 0px;
         
     }
     
-    .tienda1 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
-
-    .tienda1 p{
-        font-size: 12px;
-    }
-    
-    .titulo{
-        font-size: 30px;
-        color: rgb(138, 131, 31);
-    }
     
     .tienda2{
         
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
+        
+        width: 250px;
+        margin-right: 0px;
+    }
+    
+    
+    .tienda3{
+        
+        width: 250px;
+        margin-right: 0px;
+    }
+    
+    .tienda4{
+        
+        width: 250px;
+        margin-right: 0px;
+        
+    }
+    
+    .tienda5{
+        
+        width: 250px;
+        margin-right: 0px;
+        
+    }
+    
+    .tienda6{
+        
+        width: 250px;
+        margin-right: 0px;
+    }
+    
+    .tienda7{
+        
+        width: 250px;
+        margin-right: 0px;
+    }
+
+    .tienda8{
+        
+        width: 250px;
+        margin-right: 0px;
+        
+    }
+
+    
+    .tienda9{
+        
+        width: 250px;
+        margin-right: 0px;
+        
+        
+    }
+    
+
+    
+    
+    
+    .tienda_10{
+        
+        width: 250px;
+        margin-right: 0px;
+    }
+    
+    
+    
+    
+    .tienda_11{
+        
+        width: 250px;
+        margin-right: 0px;
+    }
+ 
+    
+    
+    .tienda_12{
+        
+        width: 250px;
+        margin-right: 0px;
+    }
+
+    
+    
+}
+
+
+@media only screen and (min-width: 425px) {
+
+    
+    
+    .subTitulo{    
+        font-size: 34px;
+        
+        
+    
+    }
+    
+    .tienda1{
+        margin-left: 20px;
+        
+    }
+    
+    
+    .tienda2{
+        
+        
+        margin-left: 20px;
+    
+    }
+    .tienda3{
+        
+        margin-left: 20px;
+    }
+
+    
+    .tienda4{
+        
+        margin-left: 20px;
+        
+    }
+    
+    .tienda5{
+        
+        margin-left: 20px;
+        
+    }
+    
+    
+    .tienda6{
+        
+        margin-left: 20px;
+    }
+    
+
+    .tienda7{
+        
+        margin-left: 20px;
+    }
+
+    .tienda8{
+        
+        margin-left: 20px;
+        
+    }
+
+    
+    
+    .tienda9{
+        
+        margin-left: 20px;
+        
+    }
+
+    
+    .tienda_10{
+        
+        margin-left: 20px;
+    }
+    
+
+    
+    
+    .tienda_11{
+        
+        margin-left: 20px;
+    }
+
+    
+    
+    .tienda_12{
+        
+        margin-left: 20px;
+    }
+    .tienda_12 img{
+        
+        height: 250px;
+        
+    }
+    
+    
+}
+
+@media only screen and (min-width: 767px) {
+
+    .grid-tienda{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto ;
+        width: 80%;
+        grid-gap: 10px;
+        margin-left: 120px;
+        
+
+    
+    }
+    
+    
+    .subTitulo{
+        
+
+        font-size: 50px;
+        margin-left: 120px;
+    
+    }
+    
+    .tienda1{
+        
         grid-column: 1/2;
-        grid-row: 2/3;
+        
+        
+    }
+    
+
+    
+    .tienda2{
+        
+        
+        grid-column: 2/3;
     }
     
     
@@ -2652,1720 +2872,459 @@ footer{
     
     .tienda3{
         
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
         grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .tienda3 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-
-    .tienda3 p{
-        font-size: 12px;
+        grid-row: 2/3;
     }
     
     .tienda4{
         
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 4/5;
+        grid-column: 2/3;
+        grid-row: 2/3;
         
     }
-    .tienda4 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
-    }
-
-    .tienda4 p{
-        font-size: 12px;
-    }
-    
     
     .tienda5{
         
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
+        grid-column: 1/2;
+        grid-row: 3/4;
         
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
+    }
+    
+    
+    
+    .tienda6{
+        
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    
+
+    
+    .tienda7{
+        
+
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    
+    .tienda8{
+        
+
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    
+    .tienda9{
+        
+
         grid-column: 1/2;
         grid-row: 5/6;
         
     }
     
-    .tienda5 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
 
-    .tienda5 p{
-        font-size: 12px;
-    }
-    
-    
-    .tienda6{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 6/7;
-    }
-    
-    
-    .tienda6 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-
-    .tienda6 p{
-        font-size: 12px;
-    }
-    
-    .tienda7{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 7/8;
-    }
-    .tienda7 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-
-    .tienda7 p{
-        font-size: 12px;
-    }
-    
-    .tienda8{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px; 
-        grid-column: 1/2;
-        grid-row: 8/9;
-    }
-    .tienda8 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
-    }
-
-    .tienda8 p{
-        font-size: 12px;
-    }
-    
-    .tienda9{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 9/10;
-        
-    }
-    
-    .tienda9 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
-
-    .tienda9 p{
-        font-size: 12px;
-    }
     
     
     .tienda_10{
         
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 10/11;
-    }
-    
-    
-    .tienda_10 img{
-        width: 100%;
-        
-        
-    }
 
-    .tienda_10 p{
-        font-size: 12px;
-    }
-    
-    .tienda_11{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 11/12;
-    }
-    .tienda_11 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-    .tienda_11 p{
-        font-size: 12px;
-    }
-    
-    .tienda_12{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .tienda_12 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
-    }
-    
-    .tienda_12 p{
-        
-        font-size: 12px;
-        
-    }
-    
-}
-
-
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-
-    .grid-tienda{
-        display: grid;
-        grid-template-columns: 1fr  ;
-        grid-template-rows: auto ;
-        width: 80%;
-        grid-gap: 10px;
-        align-content: center;
-        align-items: center;
-        margin-left: 90px;
-        
-
-    
-    }
-    
-    .prueba {
-        display: grid;
-        margin: auto;
-        width: 100%;
-        background-image: url(../imagenes/FondoTienda.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .subTitulo{
-        
-        width: max-content;
-        font-size: 25px;
-        position: absolute;
-        left: 30%;
-        color: rgb(196, 196, 199);
-        top: 150px;
-        background-color: rgb(3, 3, 3);
-        border-radius: 12px;
-        border: solid;
-        border-color:rgb(153, 153, 67);
-    
-    }
-    
-    .tienda1{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        
-        
-    }
-    
-    .tienda1 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
-
-    .tienda1 p{
-        font-size: 12px;
-    }
-    
-    .titulo{
-        font-size: 30px;
-        color: rgb(138, 131, 31);
-    }
-    
-    .tienda2{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    
-    
-    .tienda2 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-
-    .tienda2 p{
-        font-size: 12px;
-    }
-    
-    .tienda3{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .tienda3 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-
-    .tienda3 p{
-        font-size: 12px;
-    }
-    
-    .tienda4{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 4/5;
-        
-    }
-    .tienda4 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
-    }
-
-    .tienda4 p{
-        font-size: 12px;
-    }
-    
-    
-    .tienda5{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
+        grid-column: 2/3;
         grid-row: 5/6;
-        
     }
     
-    .tienda5 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
+    
 
-    .tienda5 p{
-        font-size: 12px;
-    }
-    
-    
-    .tienda6{
+    .tienda_11{
         
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
+
         grid-column: 1/2;
         grid-row: 6/7;
     }
     
-    
-    .tienda6 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-
-    .tienda6 p{
-        font-size: 12px;
-    }
-    
-    .tienda7{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 7/8;
-    }
-    .tienda7 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-
-    .tienda7 p{
-        font-size: 12px;
-    }
-    
-    .tienda8{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px; 
-        grid-column: 1/2;
-        grid-row: 8/9;
-    }
-    .tienda8 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
-    }
-
-    .tienda8 p{
-        font-size: 12px;
-    }
-    
-    .tienda9{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 9/10;
-        
-    }
-    
-    .tienda9 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
-
-    .tienda9 p{
-        font-size: 12px;
-    }
-    
-    
-    .tienda_10{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 10/11;
-    }
-    
-    
-    .tienda_10 img{
-        width: 100%;
-        
-        
-    }
-
-    .tienda_10 p{
-        font-size: 12px;
-    }
-    
-    .tienda_11{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 11/12;
-    }
-    .tienda_11 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-    .tienda_11 p{
-        font-size: 12px;
-    }
-    
     .tienda_12{
         
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .tienda_12 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
-    }
-    
-    .tienda_12 p{
-        
-        font-size: 12px;
-        
+        grid-column: 2/3;
+        grid-row: 6/7;
     }
     
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
+@media only screen and (min-width: 1024px) {
 
     .grid-tienda{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto ;
-        width: 80%;
-        grid-gap: 10px;
-        align-content: center;
-        align-items: center;
-        margin-left: 120px;
+        grid-gap:  18px ;
+
         
 
     
     }
-    
-    .prueba {
-        display: grid;
-        margin: auto;
-        width: 100%;
-        background-image: url(../imagenes/FondoTienda.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+
     
     .subTitulo{
         
-        width: max-content;
-        font-size: 40px;
-        position: absolute;
-        left: 35%;
-        color: rgb(196, 196, 199);
-        top: 150px;
-        background-color: rgb(3, 3, 3);
-        border-radius: 12px;
-        border: solid;
-        border-color:rgb(153, 153, 67);
+        margin-left: 300px;
     
     }
     
     .tienda1{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
+
         grid-column: 1/2;
         grid-row: 1/2;
         
         
     }
     
-    .tienda1 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
 
-    .tienda1 p{
-        font-size: 12px;
-    }
-    
-    .titulo{
-        font-size: 30px;
-        color: rgb(138, 131, 31);
-    }
     
     .tienda2{
-        
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
+
         grid-column: 2/3;
         grid-row: 1/2;
     }
     
     
-    .tienda2 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
 
-    .tienda2 p{
-        font-size: 12px;
-    }
     
     .tienda3{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
+
         grid-column: 3/4;
         grid-row: 1/2;
     }
-    .tienda3 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
 
-    .tienda3 p{
-        font-size: 12px;
-    }
     
     .tienda4{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
         grid-column: 1/2;
         grid-row: 2/3;
         
     }
-    .tienda4 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
-    }
 
-    .tienda4 p{
-        font-size: 12px;
-    }
     
     
     .tienda5{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
         grid-column: 2/3;
         grid-row: 2/3;
         
     }
     
-    .tienda5 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
 
-    .tienda5 p{
-        font-size: 12px;
-    }
     
     
     .tienda6{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
         grid-column: 3/4;
         grid-row: 2/3;
     }
     
     
-    .tienda6 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
 
-    .tienda6 p{
-        font-size: 12px;
-    }
     
     .tienda7{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
+
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .tienda7 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
 
-    .tienda7 p{
-        font-size: 12px;
-    }
     
-    .tienda8{
-        
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px; 
+    .tienda8{ 
         grid-column: 2/3;
         grid-row: 3/4;
     }
-    .tienda8 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
-    }
 
-    .tienda8 p{
-        font-size: 12px;
-    }
     
     .tienda9{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
         grid-column: 3/4;
         grid-row: 3/4;
         
     }
     
-    .tienda9 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
 
-    .tienda9 p{
-        font-size: 12px;
-    }
     
     
     .tienda_10{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
         grid-column: 1/2;
         grid-row: 4/5;
     }
     
     
-    .tienda_10 img{
-        width: 100%;
-        
-        
-    }
 
-    .tienda_10 p{
-        font-size: 12px;
-    }
     
     .tienda_11{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
         grid-column: 2/3;
         grid-row: 4/5;
     }
-    .tienda_11 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-    .tienda_11 p{
-        font-size: 12px;
-    }
+
     
     .tienda_12{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
+
         grid-column: 3/4;
         grid-row: 4/5;
-    }
-    .tienda_12 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
-    }
-    
-    .tienda_12 p{
-        
-        font-size: 12px;
-        
     }
     
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+@media only screen and (min-width: 1440px) {
 
     .grid-tienda{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto ;
-        width: 80%;
-        grid-gap: 10px;
-        align-content: center;
-        align-items: center;
-        margin-left: 120px;
+        grid-gap:  18px ;
+
         
 
     
     }
-    
-    .prueba {
-        display: grid;
-        margin: auto;
-        width: 100%;
-        background-image: url(../imagenes/FondoTienda.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+
     
     .subTitulo{
         
-        width: max-content;
-        font-size: 40px;
-        position: absolute;
-        left: 35%;
-        color: rgb(196, 196, 199);
-        top: 150px;
-        background-color: rgb(3, 3, 3);
-        border-radius: 12px;
-        border: solid;
-        border-color:rgb(153, 153, 67);
+        margin-left: 30%;
     
     }
     
     .tienda1{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
+
         grid-column: 1/2;
         grid-row: 1/2;
         
         
     }
     
-    .tienda1 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
 
-    .tienda1 p{
-        font-size: 12px;
-    }
-    
-    .titulo{
-        font-size: 30px;
-        color: rgb(138, 131, 31);
-    }
     
     .tienda2{
-        
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
+
         grid-column: 2/3;
         grid-row: 1/2;
     }
     
     
-    .tienda2 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
 
-    .tienda2 p{
-        font-size: 12px;
-    }
     
     .tienda3{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
+
         grid-column: 3/4;
         grid-row: 1/2;
     }
-    .tienda3 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
 
-    .tienda3 p{
-        font-size: 12px;
-    }
     
     .tienda4{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 2/3;
-        
-    }
-    .tienda4 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
+        grid-column: 4/5;
+        grid-row: 1/2;
         
     }
 
-    .tienda4 p{
-        font-size: 12px;
-    }
     
     
     .tienda5{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 2/3;
+        grid-column: 1/2;
         grid-row: 2/3;
         
     }
     
-    .tienda5 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
 
-    .tienda5 p{
-        font-size: 12px;
-    }
     
     
     .tienda6{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 3/4;
+        grid-column: 2/3;
         grid-row: 2/3;
     }
     
     
-    .tienda6 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
 
-    .tienda6 p{
-        font-size: 12px;
-    }
     
     .tienda7{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .tienda7 img{
-        width: 100%;
-        padding-right: 15px;
-        
+
+        grid-column: 3/4;
+        grid-row: 2/3;
     }
 
-    .tienda7 p{
-        font-size: 12px;
-    }
     
-    .tienda8{
-        
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px; 
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    .tienda8 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
+    .tienda8{ 
+        grid-column: 4/5;
+        grid-row: 2/3;
     }
 
-    .tienda8 p{
-        font-size: 12px;
-    }
     
     .tienda9{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 3/4;
+        grid-column: 1/2;
         grid-row: 3/4;
         
     }
     
-    .tienda9 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
 
-    .tienda9 p{
-        font-size: 12px;
-    }
     
     
     .tienda_10{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 4/5;
+        grid-column: 2/3;
+        grid-row: 3/4;
     }
     
     
-    .tienda_10 img{
-        width: 100%;
-        
-        
-    }
 
-    .tienda_10 p{
-        font-size: 12px;
-    }
     
     .tienda_11{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 2/3;
-        grid-row: 4/5;
+        grid-column: 3/4;
+        grid-row: 3/4;
     }
-    .tienda_11 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-    .tienda_11 p{
-        font-size: 12px;
-    }
+
     
     .tienda_12{
         
-        background-color: bisque;
-        width: 200px;
-        padding-left: 15px;
-        height: 450px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 3/4;
-        grid-row: 4/5;
-    }
-    .tienda_12 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
-    }
-    
-    .tienda_12 p{
-        
-        font-size: 12px;
-        
+
+        grid-column: 4/5;
+        grid-row: 3/4;
     }
     
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 1600px) {
+@media only screen and (min-width: 2560px) {
 
     .grid-tienda{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto ;
-        width: 80%;
-        grid-gap: 10px;
-        align-content: center;
-        align-items: center;
-        margin-left: 120px;
+        grid-gap:  80px ;
+        margin-left: 300px;
+
         
 
     
     }
-    
-    .prueba {
-        display: grid;
-        margin: auto;
-        width: 100%;
-        background-image: url(../imagenes/FondoTienda.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+
     
     .subTitulo{
-        
-        width: max-content;
-        font-size: 40px;
-        position: absolute;
-        left: 35%;
-        color: rgb(196, 196, 199);
-        top: 150px;
-        background-color: rgb(3, 3, 3);
-        border-radius: 12px;
-        border: solid;
-        border-color:rgb(153, 153, 67);
+        font-size: 75px;
+        margin-left: 38%;
     
     }
     
     .tienda1{
         
-        background-color: bisque;
         width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
         grid-column: 1/2;
         grid-row: 1/2;
         
         
     }
     
-    .tienda1 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
 
-    .tienda1 p{
-        font-size: 12px;
-    }
-    
-    .titulo{
-        font-size: 30px;
-        color: rgb(138, 131, 31);
-    }
     
     .tienda2{
-        
-        background-color: bisque;
         width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
         grid-column: 2/3;
         grid-row: 1/2;
     }
     
     
-    .tienda2 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
 
-    .tienda2 p{
-        font-size: 12px;
-    }
     
     .tienda3{
-        
-        background-color: bisque;
         width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
         grid-column: 3/4;
         grid-row: 1/2;
     }
-    .tienda3 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
 
-    .tienda3 p{
-        font-size: 12px;
-    }
     
     .tienda4{
-        
-        background-color: bisque;
         width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 2/3;
-        
-    }
-    .tienda4 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
+        grid-column: 4/5;
+        grid-row: 1/2;
         
     }
 
-    .tienda4 p{
-        font-size: 12px;
-    }
     
     
     .tienda5{
-        
-        background-color: bisque;
         width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 2/3;
-        grid-row: 2/3;
+        grid-column: 5/6;
+        grid-row: 1/2;
         
     }
     
-    .tienda5 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
 
-    .tienda5 p{
-        font-size: 12px;
-    }
     
     
     .tienda6{
         
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 3/4;
+        grid-column: 1/2;
         grid-row: 2/3;
     }
     
     
-    .tienda6 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
 
-    .tienda6 p{
-        font-size: 12px;
-    }
     
     .tienda7{
-        
-        background-color: bisque;
         width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .tienda7 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-
-    .tienda7 p{
-        font-size: 12px;
-    }
-    
-    .tienda8{
-        
-        background-color: bisque;
-        width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px; 
         grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    .tienda8 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
+        grid-row: 2/3;
     }
 
-    .tienda8 p{
-        font-size: 12px;
+    
+    .tienda8{ 
+        width: 300px;
+        grid-column: 3/4;
+        grid-row: 2/3;
     }
+
     
     .tienda9{
-        
-        background-color: bisque;
         width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 3/4;
-        grid-row: 3/4;
+        grid-column: 4/5;
+        grid-row: 2/3;
         
     }
     
-    .tienda9 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
 
-    .tienda9 p{
-        font-size: 12px;
-    }
     
     
     .tienda_10{
-        
-        background-color: bisque;
         width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 1/2;
-        grid-row: 4/5;
+        grid-column: 5/6;
+        grid-row: 2/3;
     }
     
     
-    .tienda_10 img{
-        width: 100%;
-        
-        
-    }
 
-    .tienda_10 p{
-        font-size: 12px;
-    }
     
     .tienda_11{
-        
-        background-color: bisque;
         width: 300px;
-        padding-left: 15px;
-        
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 2/3;
-        grid-row: 4/5;
+        grid-column: 1/2;
+        grid-row: 3/4;
     }
-    .tienda_11 img{
-        width: 100%;
-        padding-right: 15px;
-        
-    }
-    .tienda_11 p{
-        font-size: 12px;
-    }
+
     
     .tienda_12{
-        
-        background-color: bisque;
         width: 300px;
-        padding-left: 15px;
-        height: 550px;
-        text-align: center;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        grid-column: 3/4;
-        grid-row: 4/5;
-    }
-    .tienda_12 img{
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-        
-    }
-    
-    .tienda_12 p{
-        
-        font-size: 12px;
-        
+        grid-column: 2/3;
+        grid-row: 3/4;
     }
     
 }
-
-
 
 
 /*-----------------teriman Tienda----------------*/
