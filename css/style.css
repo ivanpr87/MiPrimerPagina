@@ -20,7 +20,7 @@ header{
     height: 100px;
     display: flex;
     color: beige;
-    background-image: url(/imagenes/Fondo2.jpg);
+    background-image: url(../imagenes/Fondo2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
