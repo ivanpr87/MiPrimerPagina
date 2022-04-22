@@ -17,12 +17,13 @@ body {
 
 header{
     width: 100%;
-    height: 120px;
+    height: 100px;
     display: flex;
     color: beige;
     background-image: url(/imagenes/Fondo2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center;
     top: 0;
     left: 0;
     
@@ -38,971 +39,188 @@ header{
 .nav{
     display: flex;
     justify-content: space-between;
-    max-width: 992px;
     margin: 0 auto;
+    height: 100px;
+    width: 100%;
+    align-items: center;
 }
 
 .nav h1{
-    display: flex;
-    align-items: center;
     font-size: 75px;
     color: beige;
-    line-height: 80PX;
+    margin-left: 35%;
     
+}
+
+.hambur {
+    font-size: 25px;
+    color: beige;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 
 
 
 .nav-pag{
-    display: flex;
-    list-style: none;
-    padding: 10PX;
-    margin: 0;
-    position: absolute;
-    text-align: center;
-    line-height: 80PX;
-    left: 50px;
-    
-    
-
-}
-
-.nav-pag li{
-    padding: 0 15px;
-    
-}
-
-
-
-.nav-pag li a{
-    font-size: 35px;
-    border-radius: 55px;
-    border: 5px solid rgba(241, 238, 237);
-    padding: 5px;
-    transition: 1s;
-    color: beige;
-    font-size: 23px;
-}
-
-.nav-pag li a:hover{
-    font-size: 35px;
-    border-radius: 55px;
-    border: 5px solid coral;
-    padding: 5px;
-    color: coral;
-    font-size: 45px;
-    
-}
-
-.iconos{
-    display: flex;
-    list-style: none;
-    padding: 10PX;
-    margin: 0;
-    text-align: center;
-    line-height: 80PX;
-    position: absolute;
-    right: 50px;
-    
-    
-    
-    
-}
-
-.iconos li{
-    padding: 0 15px;
-    width: max-content;
-    
-}
-
-
-.iconos li a {
-    font-size: 35px;
-    border-radius: 55px;
-    border: 5px solid rgba(241, 238, 237);
-    padding: 5px;
-    transition: 1s;
-    font-size: 23px;
-    
-}
-
-.iconos li a:hover{
-    font-size: 35px;
-    border-radius: 55px;
-    border: 5px solid coral;
-    padding: 5px;
-    color: coral;
-    font-size: 45px;
-    
-}
-
-@media only screen and (min-width: 320px) and (max-width:359px) { 
-    header{
-        width: 100%;
-        height: 80px;
-        display: flex;
-        color: beige;
-        background-image: url(/imagenes/Fondo2.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        top: 0;
-        left: 0;
-        
-        
-        
-    }
-    
-    .deco{
-        text-decoration: none;
-        color: beige;
-        font-size: 10PX;
-    }
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        max-width: 992px;
-        margin: 0 auto;
-        
-    }
-    
-    .nav h1{
-        display: flex;
-        align-items: center;
-        font-size: 25px;
-        color: beige;
-        line-height: 60PX;
-        
-    }
-    
-        
-    .nav-pag{
-        display: inline;
-        list-style: none;
-        padding: 1PX;
-        margin: 0;
-        position: absolute;
-        text-align: center;
-        line-height: 9PX;
-        left: 5px;
-        
-        
-        
-    }
-    
-    .nav-pag li{
-        padding: 4px 5px;
-        
-    }
-
-    
-.nav-pag li a{
-    font-size: 10px;
-    border-radius: 55px;
-    border: 1px solid rgba(241, 238, 237);
-    padding: 1px;
-    transition: 1s;
-    color: beige;
-}
-
-.nav-pag li a:hover{
-    font-size: 12px;
-    border-radius: 55px;
-    border: 1px solid coral;
-    padding: 1px;
-    color: coral;
-    
-    
-}
-
-    
-    
-    .iconos{
-        
-        display: inline;
-        list-style: none;
-        margin: 0;
-        padding: 1px;
-        text-align: center;
-        line-height: 9PX;
-        position: absolute;
-        right: 5px;
-        top: 0px;
-        font-size: 5px;   
-        
-    }
-    
-    .iconos li{
-        padding: 4px;
-        width: max-content;
-        margin-top: 5px;
-
-    }
-
-    .iconos li a {
-        font-size: 10px;
-        border-radius: 55px;
-        border: 1px solid rgba(241, 238, 237);
-        padding: 1px;
-        transition: 1s;
-        
-        
-    }
-    
-    .iconos li a:hover{
-        font-size: 12px;
-        border-radius: 55px;
-        border: 1px solid coral;
-        padding: 1px;
-        color: coral;
-        
-        
-    }
-}
-
-@media only screen and (min-width: 360px) and (max-width:479px) { 
-    header{
-        width: 100%;
-        height: 80px;
-        display: flex;
-        color: beige;
-        background-image: url(/imagenes/Fondo2.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        top: 0;
-        left: 0;
-        
-        
-        
-    }
-    
-    .deco{
-        text-decoration: none;
-        color: beige;
-        font-size: 10PX;
-    }
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        max-width: 992px;
-        margin: 0 auto;
-        
-    }
-    
-    .nav h1{
-        display: flex;
-        align-items: center;
-        font-size: 25px;
-        color: beige;
-        line-height: 60PX;
-        
-    }
-    
-        
-    .nav-pag{
-        display: inline;
-        list-style: none;
-        padding: 1PX;
-        margin: 0;
-        position: absolute;
-        text-align: center;
-        line-height: 9PX;
-        left: 5px;
-        
-        
-        
-    }
-    
-    .nav-pag li{
-        padding: 4px 5px;
-        
-    }
-
-    
-.nav-pag li a{
-    font-size: 10px;
-    border-radius: 55px;
-    border: 1px solid rgba(241, 238, 237);
-    padding: 1px;
-    transition: 1s;
-    color: beige;
-}
-
-.nav-pag li a:hover{
-    font-size: 12px;
-    border-radius: 55px;
-    border: 1px solid coral;
-    padding: 1px;
-    color: coral;
-    
-    
-}
-
-    
-    
-    .iconos{
-        
-        display: inline;
-        list-style: none;
-        margin: 0;
-        padding: 1px;
-        text-align: center;
-        line-height: 9PX;
-        position: absolute;
-        right: 5px;
-        top: 0px;
-        font-size: 5px;   
-        
-    }
-    
-    .iconos li{
-        padding: 4px;
-        width: max-content;
-        margin-top: 5px;
-
-    }
-
-    .iconos li a {
-        font-size: 10px;
-        border-radius: 55px;
-        border: 1px solid rgba(241, 238, 237);
-        padding: 1px;
-        transition: 1s;
-        
-        
-    }
-    
-    .iconos li a:hover{
-        font-size: 12px;
-        border-radius: 55px;
-        border: 1px solid coral;
-        padding: 1px;
-        color: coral;
-        
-        
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width:1024px) { 
-    header{
-        width: 100%;
-        height: 120px;
-        display: flex;
-        color: beige;
-        background-image: url(/imagenes/Fondo2.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        top: 0;
-        left: 0;
-        
-        
-        
-    }
-    
-    .deco{
-        text-decoration: none;
-        color: beige;
-        font-size: 18PX;
-    }
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        max-width: 992px;
-        margin: 0 auto;
-        
-    }
-    
-    .nav h1{
-        display: flex;
-        align-items: center;
-        font-size: 55px;
-        color: beige;
-        line-height: 60PX;
-        
-    }
-    
-        
-    .nav-pag{
-        display: inline;
-        list-style: none;
-        padding: 1PX;
-        margin: 0;
-        position: absolute;
-        text-align: center;
-        line-height: 9PX;
-        left: 5px;
-        
-        
-        
-    }
-    
-    .nav-pag li{
-        padding: 10px 10px;
-        
-    }
-
-    
-.nav-pag li a{
-    font-size: 20px;
-    border-radius: 55px;
-    border: 1px solid rgba(241, 238, 237);
-    padding: 1px;
-    transition: 1s;
-    color: beige;
-}
-
-.nav-pag li a:hover{
-    font-size: 12px;
-    border-radius: 55px;
-    border: 1px solid coral;
-    padding: 1px;
-    color: coral;
-    
-    
-}
-
-    
-    
-    .iconos{
-        
-        display: inline;
-        list-style: none;
-        margin: 0;
-        padding: 1px;
-        text-align: center;
-        line-height: 9PX;
-        position: absolute;
-        right: 5px;
-        top: 0px;
-            
-    }
-    
-    .iconos li{
-        padding: 4px;
-        width: max-content;
-        margin-top: 15px;
-
-
-    }
-
-    .iconos li a {
-        font-size: 20px;
-        border-radius: 55px;
-        border: 1px solid rgba(241, 238, 237);
-        padding: 1px;
-        transition: 1s;
-        
-        
-    }
-    
-    .iconos li a:hover{
-        font-size: 12px;
-        border-radius: 55px;
-        border: 1px solid coral;
-        padding: 1px;
-        color: coral;
-        
-        
-    }
-}
-
-@media only screen and (min-width: 480px) and (max-width:767px) { 
-    header{
-        width: 100%;
-        height: 80px;
-        display: flex;
-        color: beige;
-        background-image: url(/imagenes/Fondo2.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        top: 0;
-        left: 0;
-        
-        
-        
-    }
-    
-    .deco{
-        text-decoration: none;
-        color: beige;
-        font-size: 10PX;
-    }
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        max-width: 992px;
-        margin: 0 auto;
-        
-    }
-    
-    .nav h1{
-        display: flex;
-        align-items: center;
-        font-size: 25px;
-        color: beige;
-        line-height: 60PX;
-        
-    }
-    
-        
-    .nav-pag{
-        display: inline;
-        list-style: none;
-        padding: 1PX;
-        margin: 0;
-        position: absolute;
-        text-align: center;
-        line-height: 9PX;
-        left: 5px;
-        
-        
-        
-    }
-    
-    .nav-pag li{
-        padding: 4px 5px;
-        
-    }
-
-    
-.nav-pag li a{
-    font-size: 10px;
-    border-radius: 55px;
-    border: 1px solid rgba(241, 238, 237);
-    padding: 1px;
-    transition: 1s;
-    color: beige;
-}
-
-.nav-pag li a:hover{
-    font-size: 12px;
-    border-radius: 55px;
-    border: 1px solid coral;
-    padding: 1px;
-    color: coral;
-    
-    
-}
-
-    
-    
-    .iconos{
-        
-        display: inline;
-        list-style: none;
-        margin: 0;
-        padding: 1px;
-        text-align: center;
-        line-height: 9PX;
-        position: absolute;
-        right: 5px;
-        top: 0px;
-        font-size: 5px;   
-        
-    }
-    
-    .iconos li{
-        padding: 4px;
-        width: max-content;
-        margin-top: 5px;
-
-    }
-
-    .iconos li a {
-        font-size: 10px;
-        border-radius: 55px;
-        border: 1px solid rgba(241, 238, 237);
-        padding: 1px;
-        transition: 1s;
-        
-        
-    }
-    
-    .iconos li a:hover{
-        font-size: 12px;
-        border-radius: 55px;
-        border: 1px solid coral;
-        padding: 1px;
-        color: coral;
-        
-        
-    }
-}
-
-
-@media only screen and (min-width: 1024px) and (max-width:1200px) { 
-    header{
-        width: 100%;
-        height: 100px;
-        display: flex;
-        color: beige;
-        background-image: url(/imagenes/Fondo2.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        top: 0;
-        left: 0;
-        
-        
-        
-    }
-    
-    .deco{
-        text-decoration: none;
-        color: beige;
-        font-size: 20PX;
-    }
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        max-width: 992px;
-        margin: 0 auto;
-        
-    }
-    
-    .nav h1{
-        display: flex;
-        align-items: center;
-        font-size: 60px;
-        color: beige;
-        line-height: 60PX;
-        
-    }
-    
-        
-    .nav-pag{
-        display: inline;
-        list-style: none;
-        padding: 1PX;
-        margin: 0;
-        position: absolute;
-        text-align: center;
-        line-height: 9PX;
-        left: 5px;
-        
-        
-        
-    }
-    
-    .nav-pag li{
-        padding: 8px 5px;
-        
-    }
-
-    
-.nav-pag li a{
-    font-size: 15px;
-    border-radius: 55px;
-    border: 1px solid rgba(241, 238, 237);
-    padding: 1px;
-    transition: 1s;
-    color: beige;
-}
-
-.nav-pag li a:hover{
-    font-size: 12px;
-    border-radius: 55px;
-    border: 1px solid coral;
-    padding: 1px;
-    color: coral;
-    
-    
-}
-
-    
-    
-    .iconos{
-        
-        display: inline;
-        list-style: none;
-        margin: 0;
-        padding: 1px;
-        text-align: center;
-        line-height: 9PX;
-        position: absolute;
-        right: 5px;
-        top: 0px;
-        font-size: 5px;   
-        
-    }
-    
-    .iconos li{
-        padding: 4px;
-        width: max-content;
-        margin-top: 5px;
-
-    }
-
-    .iconos li a {
-        font-size: 15px;
-        border-radius: 55px;
-        border: 1px solid rgba(241, 238, 237);
-        padding: 1px;
-        transition: 1s;
-        
-        
-    }
-    
-    .iconos li a:hover{
-        font-size: 12px;
-        border-radius: 55px;
-        border: 1px solid coral;
-        padding: 1px;
-        color: coral;
-        
-        
-    }
-}
-
-@media only screen and (min-width: 1200px) and (max-width:1600px) { 
-    header{
-        width: 100%;
-        height: 100px;
-        display: flex;
-        color: beige;
-        background-image: url(/imagenes/Fondo2.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        top: 0;
-        left: 0;
-        
-        
-        
-    }
-    
-    .deco{
-        text-decoration: none;
-        color: beige;
-        font-size: 20PX;
-    }
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        max-width: 992px;
-        margin: 0 auto;
-        
-    }
-    
-    .nav h1{
-        display: flex;
-        align-items: center;
-        font-size: 60px;
-        color: beige;
-        line-height: 60PX;
-        
-    }
-    
-        
-    .nav-pag{
-        display: inline;
-        list-style: none;
-        padding: 1PX;
-        margin: 0;
-        position: absolute;
-        text-align: center;
-        line-height: 9PX;
-        left: 5px;
-        
-        
-        
-    }
-    
-    .nav-pag li{
-        padding: 8px 5px;
-        
-    }
-
-    
-.nav-pag li a{
-    font-size: 15px;
-    border-radius: 55px;
-    border: 1px solid rgba(241, 238, 237);
-    padding: 1px;
-    transition: 1s;
-    color: beige;
-}
-
-.nav-pag li a:hover{
-    font-size: 12px;
-    border-radius: 55px;
-    border: 1px solid coral;
-    padding: 1px;
-    color: coral;
-    
-    
-}
-
-    
-    
-    .iconos{
-        
-        display: inline;
-        list-style: none;
-        margin: 0;
-        padding: 1px;
-        text-align: center;
-        line-height: 9PX;
-        position: absolute;
-        right: 5px;
-        top: 0px;
-        font-size: 5px;   
-        
-    }
-    
-    .iconos li{
-        padding: 4px;
-        width: max-content;
-        margin-top: 5px;
-
-    }
-
-    .iconos li a {
-        font-size: 15px;
-        border-radius: 55px;
-        border: 1px solid rgba(241, 238, 237);
-        padding: 1px;
-        transition: 1s;
-        
-        
-    }
-    
-    .iconos li a:hover{
-        font-size: 12px;
-        border-radius: 55px;
-        border: 1px solid coral;
-        padding: 1px;
-        color: coral;
-        
-        
-    }
-}
-
-
-@media only screen and (min-width: 1600px) {
-    
-
-header{
+    position: fixed;
     width: 100%;
-    height: 120px;
-    display: flex;
-    color: beige;
-    background-image: url(/imagenes/Fondo2.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    top: 0;
-    left: 0;
-    
-    
-    
-}
-
-.deco{
-    text-decoration: none;
-    color: beige;
-    font-size: 18PX;
-}
-.nav{
-    display: flex;
-    justify-content: space-between;
-    max-width: 992px;
-    margin: 0 auto;
-}
-
-.nav h1{
-    display: flex;
-    align-items: center;
-    font-size: 65px;
-    color: beige;
-    line-height: 80PX;
-    
-}
-
-
-
-
-.nav-pag{
-    display: flex;
-    list-style: none;
-    padding: 10PX;
-    margin: 0;
-    position: absolute;
+    height: 0vh;
+    top: 100px;
+    background-color: rgba(0, 0, 0, .95);
     text-align: center;
-    line-height: 80PX;
-    left: 50px;
-    
-    
-
+    transition: all .5;
 }
 
 .nav-pag li{
-    padding: 0 15px;
-    
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;    
 }
-
 
 
 .nav-pag li a{
-    font-size: 35px;
-    border-radius: 55px;
-    border: 5px solid rgba(241, 238, 237);
-    padding: 5px;
-    transition: 1s;
     color: beige;
-    font-size: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .nav-pag li a:hover{
-    font-size: 35px;
-    border-radius: 55px;
-    border: 5px solid coral;
-    padding: 5px;
-    color: coral;
-    font-size: 35px;
+    color: red;
+    transition: .3s;
     
 }
 
-.iconos{
-    display: flex;
-    list-style: none;
-    padding: 10PX;
-    margin: 0;
-    text-align: center;
-    line-height: 80PX;
-    position: absolute;
-    right: 50px;
-    
-    
-    
-    
+#check {
+    display: none;
 }
 
-.iconos li{
-    padding: 0 15px;
-    width: max-content;
+#check:checked ~ .nav-pag{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-pag li {
+    display: block;
+}
+
+@media only screen and (min-width: 320px){
+    .nav h1{
+        font-size: 35px;
+        margin-left: 70px;
+    }
+}
+
+@media only screen and (min-width: 375px){
+    .nav h1{
+        
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (min-width: 425px){
+    .nav h1{
+        font-size: 40px;
+        margin-left: 120px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .nav h1{
+        font-size: 50px;
+        margin-left: 260px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+
+    header {
+        height: 150px;
+    }
+
+    .nav{
+        height: 100px;
+        
+    }
+
+    .nav h1 {
+        position: absolute;
+        font-size: 55px;
+        left: 100px;
+        
+    }
+
+    .hambur{
+        display: none;
+    }
+
+    .nav-pag{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 15px;
+        text-align: center;
+        margin-left: 100px;
+    }
+
+    .nav-pag li{
+        display: inline-block;
+        line-height: 220px;
+        margin: 0 12px;
+        transition: none;
+    }
+
+    .nav-pag li a{
+        font-size: 16px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1440px){
+
+    .nav h1 {
+        position: absolute;
+        font-size: 55px;
+        left: 25%;
+        
+    }
+}
+
+    .nav-pag{
+        margin-right: 150px;
+    }
+
+    @media only screen and (min-width: 2560px){
+
+        .nav h1 {
+            position: absolute;
+            font-size: 75px;
+            left: 30%;
+            
+        }
     
-}
-
-
-.iconos li a {
-    font-size: 35px;
-    border-radius: 55px;
-    border: 5px solid rgba(241, 238, 237);
-    padding: 5px;
-    transition: 1s;
-    font-size: 20px;
     
-}
-
-.iconos li a:hover{
-    font-size: 35px;
-    border-radius: 55px;
-    border: 5px solid coral;
-    padding: 5px;
-    color: coral;
-    font-size: 35px;
+        .nav-pag{
+            margin-right: 150px;
+        }
+        .nav-pag li a{
+            font-size: 25px;
     
-}
-}
+    }
 
+    .nav-pag li{
+        
+        margin: 0 20px;
+        
+    }
+}
+    
 /*----------------- termina en menu de navegacion -----------*/
 
 
@@ -1995,10 +1213,10 @@ footer{
     left: 40%;
     color: rgb(196, 196, 199);
     top: 150px;
-    background-color: rgb(3, 3, 3);
+    
     border-radius: 12px;
     border: solid;
-    border-color:rgb(153, 153, 67);
+    border-color:rgb(190, 0, 0);
 
 }
 
@@ -2296,6 +1514,7 @@ footer{
         font-size: 24px;
         position: absolute;
         left: 70px;
+        top: 110px;
         
         
     
@@ -2622,8 +1841,8 @@ footer{
     
     
     .subTitulo{    
-        font-size: 34px;
-        
+        font-size: 32px;
+        margin-top: 0px;
         
     
     }
@@ -2731,6 +1950,7 @@ footer{
     
     .subTitulo{    
         font-size: 34px;
+        margin-left: 5px;
         
         
     
@@ -2821,7 +2041,7 @@ footer{
     
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 
     .grid-tienda{
         display: grid;
@@ -2839,8 +2059,9 @@ footer{
     .subTitulo{
         
 
-        font-size: 50px;
-        margin-left: 120px;
+        font-size: 35px;
+        margin-left: 180px;
+        top: 105px;
     
     }
     
@@ -2969,6 +2190,7 @@ footer{
     .subTitulo{
         
         margin-left: 300px;
+        margin-top: 100px;
     
     }
     
@@ -3092,8 +2314,8 @@ footer{
 
     
     .subTitulo{
-        
-        margin-left: 30%;
+        font-size: 55px;
+        margin-left: 600px;
     
     }
     
@@ -4336,6 +3558,7 @@ footer{
 
     }
 
+
     
     @media only screen and (min-width:768px) 
     
@@ -4355,13 +3578,7 @@ footer{
             }
 
         .subTitulo2{
-            width: 100%;
-            position: absolute;
-            text-align: center;
-            top: 120px;   
             font-size: 40px;
-            padding: 15px;
-            color: beige;  
         
         }
         
@@ -4643,7 +3860,17 @@ footer{
             }
 
     }
+    @media only screen and (min-width: 1024px) {
 
+        .subTitulo2{
+            font-size: 40px;
+            margin-top: 80px;
+            
+        
+        }
+
+        
+    }
 
     @media only screen and (min-width:1440px)
     
@@ -4666,7 +3893,7 @@ footer{
             width: 100%;
             position: absolute;
             text-align: center;
-            top: 120px;   
+            top: 100px;   
             font-size: 70px;
             padding: 15px;
             color: beige;  
