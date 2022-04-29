@@ -1244,7 +1244,7 @@ footer {
     width: max-content;
     font-size: 60px;
     position: absolute;
-    left: 40%;
+    left: 0%;
     color: rgb(196, 196, 199);
     top: 150px;
 
@@ -2365,7 +2365,7 @@ footer {
 
     .subTitulo {
         font-size: 55px;
-        margin-left: 600px;
+        margin-left: 450px;
 
     }
 
