@@ -1,21 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    text-transform:capitalize;
+    text-transform: capitalize;
     font-family: 'Fredoka One', cursive;
     box-sizing: border-box;
 }
 
 body {
     min-height: 100%;
-    
-    
+
 }
 
 
 /*----------------- Menu de navegacion -----------*/
 
-header{
+header {
     width: 100%;
     height: 100px;
     display: flex;
@@ -24,17 +23,29 @@ header{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    
-    
+    top: 0;
+    left: 0;
+}
+
+.tituL {
+    font-size: 55px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    left: 40rem;
     
 }
 
-.deco{
+
+
+.deco {
     text-decoration: none;
     color: beige;
     font-size: 18PX;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -43,11 +54,11 @@ header{
     align-items: center;
 }
 
-.nav h1{
+.nav h1 {
     font-size: 75px;
     color: beige;
     margin-left: 35%;
-    
+
 }
 
 .hambur {
@@ -60,7 +71,7 @@ header{
 
 
 
-.nav-pag{
+.nav-pag {
     position: fixed;
     width: 100%;
     height: 0vh;
@@ -70,91 +81,91 @@ header{
     transition: all .5;
 }
 
-.nav-pag li{
+.nav-pag li {
     display: none;
     line-height: 30px;
     margin: 50px 0;
-    transition: all .5s;    
+    transition: all .5s;
 }
 
 
-.nav-pag li a{
+.nav-pag li a {
     color: beige;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-.nav-pag li a:hover{
+.nav-pag li a:hover {
     color: red;
     transition: .3s;
-    
+
 }
 
 #check {
     display: none;
 }
 
-#check:checked ~ .nav-pag{
+#check:checked~.nav-pag {
     height: 100vh;
 }
 
-#check:checked ~ .nav-pag li {
+#check:checked~.nav-pag li {
     display: block;
 }
 
-@media only screen and (min-width: 320px){
-    .nav h1{
+@media only screen and (min-width: 320px) {
+    .nav h1 {
         font-size: 35px;
         margin-left: 70px;
     }
 }
 
-@media only screen and (min-width: 375px){
-    .nav h1{
-        
+@media only screen and (min-width: 375px) {
+    .nav h1 {
+
         margin-left: 100px;
     }
 }
 
-@media only screen and (min-width: 425px){
-    .nav h1{
+@media only screen and (min-width: 425px) {
+    .nav h1 {
         font-size: 40px;
         margin-left: 120px;
     }
 }
 
-@media only screen and (min-width: 768px){
-    .nav h1{
+@media only screen and (min-width: 768px) {
+    .nav h1 {
         font-size: 50px;
         margin-left: 260px;
     }
 
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
 
     header {
         height: 150px;
     }
 
-    .nav{
+    .nav {
         height: 100px;
-        
+
     }
 
     .nav h1 {
         position: absolute;
         font-size: 55px;
         left: 100px;
-        
+
     }
 
-    .hambur{
+    .hambur {
         display: none;
     }
 
-    .nav-pag{
+    .nav-pag {
         position: relative;
         height: 100px;
         top: 0;
@@ -166,59 +177,74 @@ header{
         margin-left: 100px;
     }
 
-    .nav-pag li{
+    .nav-pag li {
         display: inline-block;
         line-height: 220px;
         margin: 0 12px;
         transition: none;
     }
 
-    .nav-pag li a{
+    .nav-pag li a {
         font-size: 16px;
     }
 
 
 }
 
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1200px) {
+
+    .nav h1 {
+        position: absolute;
+        font-size: 55px;
+        left: 20%;
+
+    }
+}
+
+.nav-pag {
+    margin-right: 150px;
+}
+
+@media only screen and (min-width: 1440px) {
 
     .nav h1 {
         position: absolute;
         font-size: 55px;
         left: 25%;
-        
+
     }
 }
 
-    .nav-pag{
+.nav-pag {
+    margin-right: 150px;
+}
+
+@media only screen and (min-width: 2560px) {
+
+    .nav h1 {
+        position: absolute;
+        font-size: 75px;
+        left: 30%;
+
+    }
+
+
+    .nav-pag {
         margin-right: 150px;
     }
 
-    @media only screen and (min-width: 2560px){
+    .nav-pag li a {
+        font-size: 25px;
 
-        .nav h1 {
-            position: absolute;
-            font-size: 75px;
-            left: 30%;
-            
-        }
-    
-    
-        .nav-pag{
-            margin-right: 150px;
-        }
-        .nav-pag li a{
-            font-size: 25px;
-    
     }
 
-    .nav-pag li{
-        
+    .nav-pag li {
+
         margin: 0 20px;
-        
+
     }
 }
-    
+
 /*----------------- termina en menu de navegacion -----------*/
 
 
@@ -231,7 +257,7 @@ header{
 
 
 
-.contenedor{
+.contenedor {
 
     width: 100%;
     display: grid;
@@ -240,13 +266,13 @@ header{
     background-position: center;
     background-size: cover;
     font-size: 35px;
-    
-    
+
+
 
 
 }
 
-.bienv{
+.bienv {
     grid-area: titu;
     text-align: center;
     font-size: 65px;
@@ -254,19 +280,20 @@ header{
     padding-top: 175px;
     transition: 1s;
 
-    
+
 }
 
 
 
-.img1{
+.img1 {
     grid-area: img1;
     color: beige;
-    font-size: 35px; 
-    
+    font-size: 35px;
+
 }
-.img1 p{
-    margin-left: 25%;    
+
+.img1 p {
+    margin-left: 25%;
     background-color: rgb(27, 2, 2);
     width: 50%;
     border-radius: 15px;
@@ -278,38 +305,40 @@ header{
     text-decoration: none;
     color: rgb(201, 126, 35);
     transition: 1s;
-    
+
 }
 
-.img1 a:hover{
-    
+.img1 a:hover {
+
     color: rgb(214, 209, 209);
     transition: .8s;
-    
+
 
 }
-.img1 img{
+
+.img1 img {
     width: 380px;
     height: 300px;
     border-radius: 55px;
     border: 2.8px solid rgb(201, 126, 35);
     transition: 1s;
     margin-left: 15px;
-    
+
 }
 
-.img1 img:hover{
+.img1 img:hover {
     transform: scale(1.05);
     transition: 1s;
 }
 
-.img2{grid-area: img2;
+.img2 {
+    grid-area: img2;
     color: beige;
     font-size: 35px;
 }
 
-.img2 p{
-    margin-left: 25%;    
+.img2 p {
+    margin-left: 25%;
     background-color: rgb(27, 2, 2);
     width: 50%;
     border-radius: 15px;
@@ -321,18 +350,18 @@ header{
     text-decoration: none;
     color: rgb(201, 126, 35);
     transition: 1s;
-    
+
 }
 
-.img2 a:hover{
-    
+.img2 a:hover {
+
     color: rgb(214, 209, 209);
     transition: .8s;
-    
+
 
 }
 
-.img2 img{
+.img2 img {
     width: 380px;
     height: 300px;
     border-radius: 55px;
@@ -342,18 +371,19 @@ header{
 
 
 
-.img2 img:hover{
+.img2 img:hover {
     transform: scale(1.05);
     transition: 1s;
 }
 
-.img3{grid-area: img3;
+.img3 {
+    grid-area: img3;
     color: beige;
     font-size: 35px;
 }
 
-.img3 p{
-    margin-left: 25%;    
+.img3 p {
+    margin-left: 25%;
     background-color: rgb(27, 2, 2);
     width: 50%;
     border-radius: 15px;
@@ -367,15 +397,15 @@ header{
     transition: 1s;
 }
 
-.img3 a:hover{
-    
+.img3 a:hover {
+
     color: rgb(214, 209, 209);
     transition: .8s;
-    
+
 
 }
 
-.img3 img{
+.img3 img {
     width: 380px;
     height: 300px;
     border-radius: 55px;
@@ -383,18 +413,20 @@ header{
     transition: 1s;
 }
 
-.img3 img:hover{
+.img3 img:hover {
     transform: scale(1.05);
     transition: 1s;
 }
 
-.img4{grid-area: img4;
+.img4 {
+    grid-area: img4;
     color: beige;
     font-size: 35px;
-    
+
 }
-.img4 p{
-    margin-left: 25%;    
+
+.img4 p {
+    margin-left: 25%;
     background-color: rgb(27, 2, 2);
     width: 50%;
     border-radius: 15px;
@@ -406,17 +438,18 @@ header{
     text-decoration: none;
     color: rgb(201, 126, 35);
     transition: 1s;
-    
+
 }
 
-.img4 a:hover{
-    
+.img4 a:hover {
+
     color: rgb(214, 209, 209);
     transition: .8s;
-    
+
 
 }
-.img4 img{
+
+.img4 img {
     width: 380px;
     height: 300px;
     border-radius: 55px;
@@ -424,7 +457,7 @@ header{
     transition: 1s;
 }
 
-.img4 img:hover{
+.img4 img:hover {
     transform: scale(1.05);
     transition: 1s;
 }
@@ -434,446 +467,457 @@ header{
     padding-bottom: 10px;
 }
 
-.video1 iframe{
+.video1 iframe {
     width: 750px;
     height: 500px;
     padding-top: 15px;
 }
-.grilla{
+
+.grilla {
     display: grid;
-    
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: .8fr 1fr 1fr 1fr ;
+    grid-template-rows: .8fr 1fr 1fr 1fr;
     grid-gap: 25px;
-    
+
 }
 
-@media only screen and (min-width: 320px){
+@media only screen and (min-width: 320px) {
 
-    .grilla{
+    .grilla {
         display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-gap: 5px;
-        
+
     }
 
-    .bienv{
+    .bienv {
         grid-column: 1/2;
         grid-row: 1/2;
         font-size: 20px;
         padding-top: 90px;
-        
+
     }
 
-    
-    .img1{
+
+    .img1 {
         grid-column: 1/2;
         grid-row: 2/2;
 
     }
 
-    .img1 img{
+    .img1 img {
         width: 200px;
         height: 150px;
-        
+
     }
 
-    .img2{
+    .img2 {
         grid-column: 1/2;
         grid-row: 3/3;
-        
+
     }
 
-    .img2 img{
+    .img2 img {
         width: 200px;
         height: 150px;
-        
+
     }
-    .img3{
+
+    .img3 {
         grid-column: 1/2;
         grid-row: 4/4;
     }
-    .img3 img{
+
+    .img3 img {
         width: 200px;
         height: 150px;
-        
+
     }
 
-    .img4{
+    .img4 {
         grid-column: 1/1;
         grid-row: 5/5;
-        
+
     }
 
-    .img4 img{
+    .img4 img {
         width: 200px;
         height: 150px;
-        
+
     }
 
-    .video1{
+    .video1 {
         grid-column: 1/2;
         grid-row: 6/6;
-        
-        
+
+
     }
 
-    .video1 iframe{
+    .video1 iframe {
         width: 280px;
         height: 150px;
-        
+
     }
-    
+
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
 
-    .grilla{
+    .grilla {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 15px;
         width: 80%;
         margin-left: 100px;
-        
+
     }
 
-    .bienv{
+    .bienv {
         grid-column: 1/2;
         grid-row: 1/2;
         font-size: 45px;
         padding-top: 90px;
-        
+
     }
 
-    
-    .img1{
+
+    .img1 {
         grid-column: 1/2;
         grid-row: 2/2;
 
     }
 
-    .img1 img{
+    .img1 img {
         width: 300px;
         height: 250px;
-        
+
     }
 
-    .img2{
+    .img2 {
         grid-column: 1/2;
         grid-row: 3/3;
-        
+
     }
 
-    .img2 img{
+    .img2 img {
         width: 300px;
         height: 250px;
-        
+
     }
-    .img3{
+
+    .img3 {
         grid-column: 1/2;
         grid-row: 4/4;
-        
+
     }
-    .img3 img{
+
+    .img3 img {
         width: 300px;
         height: 250px;
 
     }
 
-    .img4{
+    .img4 {
         grid-column: 1/1;
         grid-row: 5/5;
-        
+
     }
 
-    .img4 img{
+    .img4 img {
         width: 300px;
         height: 250px;
-        
+
     }
 
-    .video1{
+    .video1 {
         grid-column: 1/2;
         grid-row: 6/6;
-        
+
     }
 
-    .video1 iframe{
+    .video1 iframe {
         width: 500px;
         height: 250px;
-        
+
     }
-    
+
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
 
-    .grilla{
+    .grilla {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-gap: 55px;
         width: 80%;
         margin-left: 120px;
-        
+
     }
 
-    .bienv{
+    .bienv {
         grid-column: 1/3;
         grid-row: 1/2;
         font-size: 55px;
         padding-top: 130px;
-        
+
     }
 
-    
-    .img1{
+
+    .img1 {
         grid-column: 1/2;
         grid-row: 2/3;
 
     }
 
-    .img1 img{
+    .img1 img {
         width: 350px;
         height: 300px;
-        
+
     }
 
-    .img2{
+    .img2 {
         grid-column: 2/3;
         grid-row: 2/3;
-        
+
     }
 
-    .img2 img{
+    .img2 img {
         width: 350px;
         height: 300px;
-        
+
     }
-    .img3{
+
+    .img3 {
         grid-column: 1/2;
         grid-row: 3/4;
-        
+
     }
-    .img3 img{
+
+    .img3 img {
         width: 350px;
         height: 300px;
 
     }
 
-    .img4{
+    .img4 {
         grid-column: 2/3;
         grid-row: 3/4;
-        
+
     }
 
-    .img4 img{
+    .img4 img {
         width: 350px;
         height: 300px;
-        
+
     }
 
-    .video1{
+    .video1 {
         grid-column: 1/3;
         grid-row: 4/5;
-        
+
     }
 
-    .video1 iframe{
+    .video1 iframe {
         width: 500px;
         height: 250px;
-        
+
     }
-    
+
 }
 
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1440px) {
 
-    .grilla{
+    .grilla {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
         grid-gap: 25px;
         width: 80%;
-        
-        
+
+
     }
 
-    .bienv{
+    .bienv {
         grid-column: 1/6;
         grid-row: 1/2;
         font-size: 45px;
         padding-top: 100px;
-        
+
     }
 
-    
-    .img1{
+
+    .img1 {
         grid-column: 1/2;
         grid-row: 2/3;
 
     }
 
-    .img1 img{
+    .img1 img {
         width: 300px;
         height: 220px;
-        
+
     }
 
-    .img2{
+    .img2 {
         grid-column: 2/3;
         grid-row: 2/3;
-        
+
     }
 
-    .img2 img{
+    .img2 img {
         width: 300px;
         height: 220px;
-        
+
     }
-    .img3{
+
+    .img3 {
         grid-column: 3/4;
         grid-row: 2/3;
-        
+
     }
-    .img3 img{
+
+    .img3 img {
         width: 300px;
         height: 220px;
 
     }
 
-    .img4{
+    .img4 {
         grid-column: 4/5;
         grid-row: 2/3;
-        
+
     }
 
-    .img4 img{
+    .img4 img {
         width: 300px;
         height: 220px;
-        
+
     }
 
-    .video1{
+    .video1 {
         grid-column: 1/5;
         grid-row: 4/5;
-        
+
     }
 
-    .video1 iframe{
+    .video1 iframe {
         width: 500px;
         height: 250px;
-        
+
     }
-    
+
 }
 
-@media only screen and (min-width: 2550px){
+@media only screen and (min-width: 2550px) {
 
-    .grilla{
+    .grilla {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
         grid-gap: 25px;
         width: 90%;
-        
-        
+
+
     }
 
-    .bienv{
+    .bienv {
         grid-column: 1/6;
         grid-row: 1/2;
         font-size: 55px;
         padding-top: 130px;
-        
+
     }
 
-    
-    .img1{
+
+    .img1 {
         grid-column: 1/2;
         grid-row: 2/3;
 
     }
 
-    .img1 img{
+    .img1 img {
         width: 500px;
         height: 350px;
-        
+
     }
 
-    .img2{
+    .img2 {
         grid-column: 2/3;
         grid-row: 2/3;
-        
+
     }
 
-    .img2 img{
+    .img2 img {
         width: 500px;
         height: 350px;
-        
+
     }
-    .img3{
+
+    .img3 {
         grid-column: 3/4;
         grid-row: 2/3;
-        
+
     }
-    .img3 img{
+
+    .img3 img {
         width: 500px;
         height: 350px;
 
     }
 
-    .img4{
+    .img4 {
         grid-column: 4/5;
         grid-row: 2/3;
-        
+
     }
 
-    .img4 img{
+    .img4 img {
         width: 500px;
         height: 350px;
-        
+
     }
 
-    .video1{
+    .video1 {
         grid-column: 1/5;
         grid-row: 4/5;
-        
+
     }
 
-    .video1 iframe{
+    .video1 iframe {
         width: 900px;
         height: 450px;
-        
+
     }
-    
+
 }
 
 /*---------------ETermina el index------------------------------------------------------------*/
 
 /*--------------------------------------------------- Empieza el footer----------------------------------*/
 
-footer{
-    
+footer {
+
     width: 100%;
     height: 60px;
     background-color: rgb(30, 29, 31);
     position: absolute;
     justify-content: space-between;
-    
+
 
 }
 
 .copy {
-    
+
     justify-content: space-between;
     width: 250px;
     text-align: center;
     position: absolute;
     top: 30%;
-    font-size: 25px; 
+    font-size: 25px;
 
 }
 
@@ -881,7 +925,7 @@ footer{
     color: beige;
 }
 
-.redes{
+.redes {
 
     justify-content: space-between;
     left: 80%;
@@ -891,14 +935,14 @@ footer{
     position: absolute;
     top: 10%;
     font-size: 30px;
-    
+
 }
 
-.redes p{
+.redes p {
     color: beige;
 }
 
-.iconos3{
+.iconos3 {
     justify-content: space-between;
     width: 150px;
     display: flex;
@@ -913,73 +957,72 @@ footer{
     color: beige;
     padding-left: 5px;
     padding-right: 5px;
-    
+
 }
 
-.iconos3 a:hover{
+.iconos3 a:hover {
     color: coral;
     transition: 500ms;
 }
 
-@media only screen and (min-width: 320px)
+@media only screen and (min-width: 320px) {
 
-{
-    
-    footer{
+    footer {
         height: 30px;
-        
+
     }
-    
+
     .copy {
         position: relative;
         top: 8px;
         left: 10px;
-    
+
     }
-    
+
     .copy p {
         font-size: 12px;
         width: max-content;
     }
-    
-    .redes{
+
+    .redes {
         position: absolute;
         top: 9px;
         left: 58%;
         font-size: 12px;
-        
+
     }
-    
-    
-    .iconos3{
-        
+
+
+    .iconos3 {
+
         width: 0px;
-        
-        
+
+
         position: absolute;
         left: 70%;
         top: 30%;
         font-size: 12px;
     }
-    
+
     .iconos3 a {
         color: beige;
     }
-    
+
 
 }
-@media only screen and (min-width: 375px){
-    .redes{
+
+@media only screen and (min-width: 375px) {
+    .redes {
         position: absolute;
         top: 8px;
         left: 64%;
         font-size: 12px;
-        
+
     }
-    
-    
-    .iconos3{    
-        
+
+
+    .iconos3 {
+
         position: absolute;
         left: 74%;
         top: 8px;
@@ -988,18 +1031,18 @@ footer{
 
 }
 
-@media only screen and (min-width: 425px){
-    .redes{
+@media only screen and (min-width: 425px) {
+    .redes {
         position: absolute;
         top: 8px;
         left: 68%;
         font-size: 12px;
-        
+
     }
-    
-    
-    .iconos3{    
-        
+
+
+    .iconos3 {
+
         position: absolute;
         left: 77%;
         top: 8px;
@@ -1008,158 +1051,151 @@ footer{
 
 }
 
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px) {
 
-{
-    
-    footer{
+    footer {
         height: 50px;
-        
+
     }
-    
+
     .copy {
         position: relative;
         top: 16px;
         left: 10px;
-    
+
     }
 
     .copy p {
         font-size: 18px;
         width: max-content;
     }
-    
-    
-    .redes{
+
+
+    .redes {
         position: absolute;
         top: 16px;
         left: 77%;
         font-size: 18px;
-        
+
     }
-    
-    
-    .iconos3{    
-        
+
+
+    .iconos3 {
+
         position: absolute;
         left: 84%;
         top: 16px;
         font-size: 18px;
     }
-    
 
-    
+
+
 
 }
 
 
 
-@media only screen and (min-width: 1024px)
+@media only screen and (min-width: 1024px) {
 
-{
-    
-    footer{
+    footer {
         height: 50px;
-        
+
     }
-    
-    
-    .redes{
+
+
+    .redes {
         position: absolute;
         left: 80%;
-        
-        
+
+
     }
-    
-    
-    .iconos3{    
-        
+
+
+    .iconos3 {
+
         position: absolute;
         left: 87%;
-        
-    }
-    
-    
-}
-@media only screen and (min-width: 1440px)
 
-{
-    
-    footer{
-        height: 60px;
-        
     }
-    
+
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+    footer {
+        height: 60px;
+
+    }
+
     .copy {
         position: relative;
         top: 16px;
         left: 10px;
-        
-    
+
+
     }
 
     .copy p {
         font-size: 20px;
         width: max-content;
     }
-    
-    
-    .redes{
+
+
+    .redes {
         position: absolute;
         top: 16px;
         left: 86%;
         font-size: 20px;
-        
+
     }
-    
-    
-    .iconos3{    
-        
+
+
+    .iconos3 {
+
         position: absolute;
         left: 90%;
         top: 16px;
         font-size: 20px;
     }
-    
+
 }
 
 
-@media only screen and (min-width: 2560px)
+@media only screen and (min-width: 2560px) {
 
-{
-    
-    footer{
+    footer {
         height: 80px;
-        
+
     }
-    
+
     .copy {
         position: relative;
         top: 22px;
         left: 10px;
-    
+
     }
-    
+
     .copy p {
         color: beige;
         font-size: 24px;
         width: max-content;
     }
-    
-    .redes{
+
+    .redes {
         position: absolute;
         top: 22px;
         left: 91%;
         font-size: 24px;
-        
+
     }
-    
-    .redes p{
+
+    .redes p {
         color: beige;
     }
-    
-    .iconos3{    
-        
+
+    .iconos3 {
+
         position: absolute;
         left: 94%;
         top: 22px;
@@ -1179,10 +1215,10 @@ footer{
 /*-------------------------------Empieza Tienda----------------------------------------*/
 
 
-.grid-tienda{
+.grid-tienda {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     width: 80%;
     grid-gap: 35px;
     align-content: center;
@@ -1190,7 +1226,7 @@ footer{
     margin-left: 200px;
     margin-top: 200px;
     margin-bottom: 60px;
-    
+
 
 }
 
@@ -1203,23 +1239,23 @@ footer{
     background-size: cover;
 }
 
-.subTitulo{
-    
+.subTitulo {
+
     width: max-content;
     font-size: 60px;
     position: absolute;
     left: 40%;
     color: rgb(196, 196, 199);
     top: 150px;
-    
+
     border-radius: 12px;
     border: solid;
-    border-color:rgb(190, 0, 0);
+    border-color: rgb(190, 0, 0);
 
 }
 
-.tienda1{
-    
+.tienda1 {
+
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
@@ -1231,22 +1267,22 @@ footer{
     font-size: 18px;
     grid-column: 1/2;
     grid-row: 1/2;
-    
+
 }
 
-.tienda1 img{
+.tienda1 img {
     width: 100%;
     padding-right: 15px;
     height: 50%;
 }
 
-.titulo{
+.titulo {
     font-size: 30px;
     color: rgb(138, 131, 31);
 }
 
-.tienda2{
-    
+.tienda2 {
+
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
@@ -1261,18 +1297,18 @@ footer{
 }
 
 
-.tienda2 img{
+.tienda2 img {
     width: 100%;
     padding-right: 15px;
-    
+
 }
 
-.tienda3{
-    
+.tienda3 {
+
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
-    
+
     height: 550px;
     text-align: center;
     border-radius: 15px;
@@ -1282,14 +1318,15 @@ footer{
     grid-column: 3/4;
     grid-row: 1/2;
 }
-.tienda3 img{
+
+.tienda3 img {
     width: 100%;
     padding-right: 15px;
-    
+
 }
 
-.tienda4{
-    
+.tienda4 {
+
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
@@ -1301,22 +1338,23 @@ footer{
     font-size: 18px;
     grid-column: 4/5;
     grid-row: 1/2;
-    
+
 }
-.tienda4 img{
+
+.tienda4 img {
     width: 100%;
     padding-right: 15px;
     height: 50%;
-    
+
 }
 
 
-.tienda5{
-    
+.tienda5 {
+
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
-    
+
     height: 550px;
     text-align: center;
     border-radius: 15px;
@@ -1325,22 +1363,22 @@ footer{
     font-size: 18px;
     grid-column: 1/2;
     grid-row: 2/3;
-    
+
 }
 
-.tienda5 img{
+.tienda5 img {
     width: 100%;
     padding-right: 15px;
     height: 50%;
 }
 
 
-.tienda6{
-    
+.tienda6 {
+
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
-    
+
     height: 550px;
     text-align: center;
     border-radius: 15px;
@@ -1352,18 +1390,18 @@ footer{
 }
 
 
-.tienda6 img{
+.tienda6 img {
     width: 100%;
     padding-right: 15px;
-    
+
 }
 
-.tienda7{
-    
+.tienda7 {
+
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
-    
+
     height: 550px;
     text-align: center;
     border-radius: 15px;
@@ -1373,40 +1411,42 @@ footer{
     grid-column: 3/4;
     grid-row: 2/3;
 }
-.tienda7 img{
+
+.tienda7 img {
     width: 100%;
     padding-right: 15px;
-    
+
 }
 
-.tienda8{
-    
+.tienda8 {
+
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
-    
+
     height: 550px;
     text-align: center;
     border-radius: 15px;
     border-color: rgb(7, 2, 26);
     border-style: solid;
-    font-size: 18px; 
+    font-size: 18px;
     grid-column: 4/5;
     grid-row: 2/3;
 }
-.tienda8 img{
+
+.tienda8 img {
     width: 100%;
     padding-right: 15px;
     height: 50%;
-    
+
 }
 
-.tienda9{
-    
+.tienda9 {
+
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
-    
+
     height: 550px;
     text-align: center;
     border-radius: 15px;
@@ -1415,18 +1455,18 @@ footer{
     font-size: 18px;
     grid-column: 1/2;
     grid-row: 3/4;
-    
+
 }
 
-.tienda9 img{
+.tienda9 img {
     width: 100%;
     padding-right: 15px;
     height: 50%;
 }
 
 
-.tienda_10{
-    
+.tienda_10 {
+
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
@@ -1441,18 +1481,18 @@ footer{
 }
 
 
-.tienda_10 img{
+.tienda_10 img {
     width: 100%;
-    
-    
+
+
 }
 
-.tienda_11{
-    
+.tienda_11 {
+
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
-    
+
     height: 550px;
     text-align: center;
     border-radius: 15px;
@@ -1462,14 +1502,15 @@ footer{
     grid-column: 3/4;
     grid-row: 3/4;
 }
-.tienda_11 img{
+
+.tienda_11 img {
     width: 100%;
     padding-right: 15px;
-    
+
 }
 
-.tienda_12{
-    
+.tienda_12 {
+
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
@@ -1482,16 +1523,17 @@ footer{
     grid-column: 4/5;
     grid-row: 3/4;
 }
-.tienda_12 img{
+
+.tienda_12 img {
     width: 100%;
     padding-right: 15px;
     height: 50%;
-    
+
 }
 
 @media only screen and (min-width: 320px) {
 
-    .grid-tienda{
+    .grid-tienda {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -1502,326 +1544,334 @@ footer{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        
 
-    
+
+
     }
-    
-    
-    .subTitulo{    
+
+
+    .subTitulo {
         font-size: 24px;
         position: absolute;
         left: 70px;
         top: 110px;
-        
-        
-    
+
+
+
     }
-    
-    .tienda1{
-        
-        
+
+    .tienda1 {
+
+
         width: 220px;
         height: 450px;
         font-size: 18px;
         grid-column: 1/2;
         margin-right: 70px;
 
-        
-        
-        
-        
+
+
+
+
     }
-    
-    .tienda1 img{
+
+    .tienda1 img {
         width: 100%;
         height: 60%;
     }
 
-    .tienda1 p{
+    .tienda1 p {
         font-size: 12px;
     }
-    
-    .tienda1 .titulo{
+
+    .tienda1 .titulo {
         font-size: 18px;
-        
+
     }
-    
-    .tienda2{
-        
-        
+
+    .tienda2 {
+
+
         width: 220px;
         height: 450px;
         font-size: 18px;
         grid-column: 1/2;
         margin-right: 70px;
     }
-    
-    
-    .tienda2 img{
-        
+
+
+    .tienda2 img {
+
         height: 250px;
-        
+
     }
 
-    .tienda2 p{
+    .tienda2 p {
         font-size: 12px;
     }
 
-    .tienda2 .titulo{
+    .tienda2 .titulo {
         font-size: 18px;
-        
+
     }
-    
-    .tienda3{
-        
+
+    .tienda3 {
+
         width: 220px;
         height: 450px;
         font-size: 18px;
         grid-column: 1/2;
         margin-right: 70px;
     }
-    .tienda3 img{
+
+    .tienda3 img {
         height: 250px;
-        
+
     }
 
-    .tienda3 p{
+    .tienda3 p {
         font-size: 12px;
     }
 
-    .tienda3 .titulo{
+    .tienda3 .titulo {
         font-size: 18px;
-        
+
     }
-    
-    .tienda4{
-        
+
+    .tienda4 {
+
         width: 220px;
         height: 450px;
         font-size: 18px;
         grid-column: 1/2;
         margin-right: 70px;
-        
-    }
-    .tienda4 img{
-        
-        height: 250px;
-        
+
     }
 
-    .tienda4 p{
+    .tienda4 img {
+
+        height: 250px;
+
+    }
+
+    .tienda4 p {
         font-size: 12px;
     }
-    
-    .tienda4 .titulo{
+
+    .tienda4 .titulo {
         font-size: 18px;
-        
+
     }
-    
-    .tienda5{
-        
+
+    .tienda5 {
+
         width: 220px;
         height: 450px;
         font-size: 18px;
         grid-column: 1/2;
         margin-right: 70px;
-        
+
     }
-    
-    .tienda5 img{
-        
+
+    .tienda5 img {
+
         height: 250px;
     }
 
-    .tienda5 p{
+    .tienda5 p {
         font-size: 12px;
     }
 
-    .tienda5 .titulo{
+    .tienda5 .titulo {
         font-size: 18px;
-        
-    }
-    
-    
-    
-    .tienda6{
-        
-        width: 220px;
-        height: 450px;
-        font-size: 18px;
-        grid-column: 1/2;
-        margin-right: 70px;
-    }
-    
-    
-    .tienda6 img{
-        height: 250px;
-        
+
     }
 
-    .tienda6 p{
-        font-size: 12px;
-    }
-    .tienda6 .titulo{
-        font-size: 18px;
-        
-    }
-    
 
-    .tienda7{
-        
+
+    .tienda6 {
+
         width: 220px;
         height: 450px;
         font-size: 18px;
         grid-column: 1/2;
         margin-right: 70px;
     }
-    .tienda7 img{
+
+
+    .tienda6 img {
         height: 250px;
+
     }
 
-    .tienda7 p{
+    .tienda6 p {
         font-size: 12px;
     }
 
-    .tienda7 .titulo{
+    .tienda6 .titulo {
         font-size: 18px;
-        
-    }
-    
-    
-    .tienda8{
-        
-        width: 220px;
-        height: 450px;
-        font-size: 18px;
-        grid-column: 1/2;
-        margin-right: 70px;
-        
-    }
-    .tienda8 img{
-        
-        height: 250px;
-        
+
     }
 
-    .tienda8 p{
-        font-size: 12px;
-    }
 
-    .tienda8 .titulo{
-        font-size: 18px;
-        
-    }
-    
-    
-    .tienda9{
-        
-        width: 220px;
-        height: 450px;
-        font-size: 18px;
-        grid-column: 1/2;
-        margin-right: 70px;
-        
-        
-    }
-    
-    .tienda9 img{
+    .tienda7 {
 
-        height: 250px;
-    }
-
-    .tienda9 p{
-        font-size: 12px;
-    }
-
-    .tienda9 .titulo{
-        font-size: 18px;
-        
-    }
-    
-    
-    
-    .tienda_10{
-        
         width: 220px;
         height: 450px;
         font-size: 18px;
         grid-column: 1/2;
         margin-right: 70px;
     }
-    
-    
-    .tienda_10 img{
+
+    .tienda7 img {
         height: 250px;
-        
-        
     }
 
-    .tienda_10 p{
+    .tienda7 p {
         font-size: 12px;
     }
 
-    .tienda_10 .titulo{
+    .tienda7 .titulo {
         font-size: 18px;
-        
+
     }
-    
-    
-    .tienda_11{
-        
+
+
+    .tienda8 {
+
         width: 220px;
         height: 450px;
         font-size: 18px;
         grid-column: 1/2;
         margin-right: 70px;
-        
+
     }
-    .tienda_11 img{
+
+    .tienda8 img {
+
         height: 250px;
+
     }
-    .tienda_11 p{
+
+    .tienda8 p {
         font-size: 12px;
     }
 
-    .tienda_11 .titulo{
+    .tienda8 .titulo {
         font-size: 18px;
-        
+
     }
-    
-    
-    .tienda_12{
-        
+
+
+    .tienda9 {
+
+        width: 220px;
+        height: 450px;
+        font-size: 18px;
+        grid-column: 1/2;
+        margin-right: 70px;
+
+
+    }
+
+    .tienda9 img {
+
+        height: 250px;
+    }
+
+    .tienda9 p {
+        font-size: 12px;
+    }
+
+    .tienda9 .titulo {
+        font-size: 18px;
+
+    }
+
+
+
+    .tienda_10 {
+
+        width: 220px;
+        height: 450px;
+        font-size: 18px;
+        grid-column: 1/2;
+        margin-right: 70px;
+    }
+
+
+    .tienda_10 img {
+        height: 250px;
+
+
+    }
+
+    .tienda_10 p {
+        font-size: 12px;
+    }
+
+    .tienda_10 .titulo {
+        font-size: 18px;
+
+    }
+
+
+    .tienda_11 {
+
+        width: 220px;
+        height: 450px;
+        font-size: 18px;
+        grid-column: 1/2;
+        margin-right: 70px;
+
+    }
+
+    .tienda_11 img {
+        height: 250px;
+    }
+
+    .tienda_11 p {
+        font-size: 12px;
+    }
+
+    .tienda_11 .titulo {
+        font-size: 18px;
+
+    }
+
+
+    .tienda_12 {
+
         width: 220px;
         height: 450px;
         font-size: 18px;
         grid-column: 1/2;
         margin-right: 70px
     }
-    .tienda_12 img{
-        
+
+    .tienda_12 img {
+
         height: 250px;
-        
-    }
-    
-    .tienda_12 p{
-        
-        font-size: 12px;
-        
+
     }
 
-    .tienda_12 .titulo{
-        font-size: 18px;
-        
+    .tienda_12 p {
+
+        font-size: 12px;
+
     }
-    
-    
+
+    .tienda_12 .titulo {
+        font-size: 18px;
+
+    }
+
+
 }
 
 @media only screen and (min-width: 375px) {
 
-    .grid-tienda{
+    .grid-tienda {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -1832,718 +1882,720 @@ footer{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        
 
-    
+
+
     }
-    
-    
-    .subTitulo{    
+
+
+    .subTitulo {
         font-size: 32px;
         margin-top: 0px;
-        
-    
+
+
     }
-    
-    .tienda1{
-        
-        
+
+    .tienda1 {
+
+
         width: 250px;
         margin-right: 0px;
-        
+
     }
-    
-    
-    .tienda2{
-        
-        
-        width: 250px;
-        margin-right: 0px;
-    }
-    
-    
-    .tienda3{
-        
-        width: 250px;
-        margin-right: 0px;
-    }
-    
-    .tienda4{
-        
-        width: 250px;
-        margin-right: 0px;
-        
-    }
-    
-    .tienda5{
-        
-        width: 250px;
-        margin-right: 0px;
-        
-    }
-    
-    .tienda6{
-        
-        width: 250px;
-        margin-right: 0px;
-    }
-    
-    .tienda7{
-        
+
+
+    .tienda2 {
+
+
         width: 250px;
         margin-right: 0px;
     }
 
-    .tienda8{
-        
-        width: 250px;
-        margin-right: 0px;
-        
-    }
 
-    
-    .tienda9{
-        
-        width: 250px;
-        margin-right: 0px;
-        
-        
-    }
-    
+    .tienda3 {
 
-    
-    
-    
-    .tienda_10{
-        
-        width: 250px;
-        margin-right: 0px;
-    }
-    
-    
-    
-    
-    .tienda_11{
-        
-        width: 250px;
-        margin-right: 0px;
-    }
- 
-    
-    
-    .tienda_12{
-        
         width: 250px;
         margin-right: 0px;
     }
 
-    
-    
+    .tienda4 {
+
+        width: 250px;
+        margin-right: 0px;
+
+    }
+
+    .tienda5 {
+
+        width: 250px;
+        margin-right: 0px;
+
+    }
+
+    .tienda6 {
+
+        width: 250px;
+        margin-right: 0px;
+    }
+
+    .tienda7 {
+
+        width: 250px;
+        margin-right: 0px;
+    }
+
+    .tienda8 {
+
+        width: 250px;
+        margin-right: 0px;
+
+    }
+
+
+    .tienda9 {
+
+        width: 250px;
+        margin-right: 0px;
+
+
+    }
+
+
+
+
+
+    .tienda_10 {
+
+        width: 250px;
+        margin-right: 0px;
+    }
+
+
+
+
+    .tienda_11 {
+
+        width: 250px;
+        margin-right: 0px;
+    }
+
+
+
+    .tienda_12 {
+
+        width: 250px;
+        margin-right: 0px;
+    }
+
+
+
 }
 
 
 @media only screen and (min-width: 425px) {
 
-    
-    
-    .subTitulo{    
+
+
+    .subTitulo {
         font-size: 34px;
         margin-left: 5px;
-        
-        
-    
+
+
+
     }
-    
-    .tienda1{
+
+    .tienda1 {
         margin-left: 20px;
-        
+
     }
-    
-    
-    .tienda2{
-        
-        
+
+
+    .tienda2 {
+
+
         margin-left: 20px;
-    
+
     }
-    .tienda3{
-        
+
+    .tienda3 {
+
         margin-left: 20px;
     }
 
-    
-    .tienda4{
-        
-        margin-left: 20px;
-        
-    }
-    
-    .tienda5{
-        
-        margin-left: 20px;
-        
-    }
-    
-    
-    .tienda6{
-        
-        margin-left: 20px;
-    }
-    
 
-    .tienda7{
-        
+    .tienda4 {
+
+        margin-left: 20px;
+
+    }
+
+    .tienda5 {
+
+        margin-left: 20px;
+
+    }
+
+
+    .tienda6 {
+
         margin-left: 20px;
     }
 
-    .tienda8{
-        
-        margin-left: 20px;
-        
-    }
 
-    
-    
-    .tienda9{
-        
-        margin-left: 20px;
-        
-    }
+    .tienda7 {
 
-    
-    .tienda_10{
-        
-        margin-left: 20px;
-    }
-    
-
-    
-    
-    .tienda_11{
-        
         margin-left: 20px;
     }
 
-    
-    
-    .tienda_12{
-        
+    .tienda8 {
+
+        margin-left: 20px;
+
+    }
+
+
+
+    .tienda9 {
+
+        margin-left: 20px;
+
+    }
+
+
+    .tienda_10 {
+
         margin-left: 20px;
     }
-    .tienda_12 img{
-        
+
+
+
+
+    .tienda_11 {
+
+        margin-left: 20px;
+    }
+
+
+
+    .tienda_12 {
+
+        margin-left: 20px;
+    }
+
+    .tienda_12 img {
+
         height: 250px;
-        
+
     }
-    
-    
+
+
 }
 
 @media only screen and (min-width: 768px) {
 
-    .grid-tienda{
+    .grid-tienda {
         display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: auto ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
         width: 80%;
         grid-gap: 10px;
         margin-left: 120px;
-        
 
-    
+
+
     }
-    
-    
-    .subTitulo{
-        
+
+
+    .subTitulo {
+
 
         font-size: 35px;
         margin-left: 180px;
         top: 105px;
-    
-    }
-    
-    .tienda1{
-        
-        grid-column: 1/2;
-        
-        
-    }
-    
 
-    
-    .tienda2{
-        
-        
+    }
+
+    .tienda1 {
+
+        grid-column: 1/2;
+
+
+    }
+
+
+
+    .tienda2 {
+
+
         grid-column: 2/3;
     }
-    
-    
-    .tienda2 img{
+
+
+    .tienda2 img {
         width: 100%;
         padding-right: 15px;
-        
+
     }
 
-    .tienda2 p{
+    .tienda2 p {
         font-size: 12px;
     }
-    
-    .tienda3{
-        
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    
-    .tienda4{
-        
-        grid-column: 2/3;
-        grid-row: 2/3;
-        
-    }
-    
-    .tienda5{
-        
-        grid-column: 1/2;
-        grid-row: 3/4;
-        
-    }
-    
-    
-    
-    .tienda6{
-        
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    
-    
 
-    
-    .tienda7{
-        
+    .tienda3 {
+
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .tienda4 {
+
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+    }
+
+    .tienda5 {
+
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+    }
+
+
+
+    .tienda6 {
+
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+
+
+
+    .tienda7 {
+
 
         grid-column: 1/2;
         grid-row: 4/5;
     }
 
-    
-    .tienda8{
-        
+
+    .tienda8 {
+
 
         grid-column: 2/3;
         grid-row: 4/5;
     }
 
-    
-    .tienda9{
-        
+
+    .tienda9 {
+
 
         grid-column: 1/2;
         grid-row: 5/6;
-        
-    }
-    
 
-    
-    
-    .tienda_10{
-        
+    }
+
+
+
+
+    .tienda_10 {
+
 
         grid-column: 2/3;
         grid-row: 5/6;
     }
-    
-    
 
-    .tienda_11{
-        
+
+
+    .tienda_11 {
+
 
         grid-column: 1/2;
         grid-row: 6/7;
     }
-    
-    .tienda_12{
-        
+
+    .tienda_12 {
+
         grid-column: 2/3;
         grid-row: 6/7;
     }
-    
+
 }
 
 @media only screen and (min-width: 1024px) {
 
-    .grid-tienda{
+    .grid-tienda {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto ;
-        grid-gap:  18px ;
+        grid-template-rows: auto;
+        grid-gap: 18px;
 
-        
 
-    
+
+
     }
 
-    
-    .subTitulo{
-        
+
+    .subTitulo {
+
         margin-left: 300px;
         margin-top: 100px;
-    
+
     }
-    
-    .tienda1{
-        
+
+    .tienda1 {
+
 
         grid-column: 1/2;
         grid-row: 1/2;
-        
-        
-    }
-    
 
-    
-    .tienda2{
+
+    }
+
+
+
+    .tienda2 {
 
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    
-    
 
-    
-    .tienda3{
-        
+
+
+
+    .tienda3 {
+
 
         grid-column: 3/4;
         grid-row: 1/2;
     }
 
-    
-    .tienda4{
-        
+
+    .tienda4 {
+
         grid-column: 1/2;
         grid-row: 2/3;
-        
+
     }
 
-    
-    
-    .tienda5{
-        
+
+
+    .tienda5 {
+
         grid-column: 2/3;
         grid-row: 2/3;
-        
-    }
-    
 
-    
-    
-    .tienda6{
-        
+    }
+
+
+
+
+    .tienda6 {
+
         grid-column: 3/4;
         grid-row: 2/3;
     }
-    
-    
 
-    
-    .tienda7{
-        
+
+
+
+    .tienda7 {
+
 
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
-    
-    .tienda8{ 
+
+    .tienda8 {
         grid-column: 2/3;
         grid-row: 3/4;
     }
 
-    
-    .tienda9{
-        
+
+    .tienda9 {
+
         grid-column: 3/4;
         grid-row: 3/4;
-        
-    }
-    
 
-    
-    
-    .tienda_10{
-        
+    }
+
+
+
+
+    .tienda_10 {
+
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    
-    
 
-    
-    .tienda_11{
-        
+
+
+
+    .tienda_11 {
+
         grid-column: 2/3;
         grid-row: 4/5;
     }
 
-    
-    .tienda_12{
-        
+
+    .tienda_12 {
+
 
         grid-column: 3/4;
         grid-row: 4/5;
     }
-    
+
 }
 
 @media only screen and (min-width: 1440px) {
 
-    .grid-tienda{
+    .grid-tienda {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto ;
-        grid-gap:  18px ;
+        grid-template-rows: auto;
+        grid-gap: 18px;
 
-        
 
-    
+
+
     }
 
-    
-    .subTitulo{
+
+    .subTitulo {
         font-size: 55px;
         margin-left: 600px;
-    
+
     }
-    
-    .tienda1{
-        
+
+    .tienda1 {
+
 
         grid-column: 1/2;
         grid-row: 1/2;
-        
-        
-    }
-    
 
-    
-    .tienda2{
+
+    }
+
+
+
+    .tienda2 {
 
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    
-    
 
-    
-    .tienda3{
-        
+
+
+
+    .tienda3 {
+
 
         grid-column: 3/4;
         grid-row: 1/2;
     }
 
-    
-    .tienda4{
-        
+
+    .tienda4 {
+
         grid-column: 4/5;
         grid-row: 1/2;
-        
+
     }
 
-    
-    
-    .tienda5{
-        
+
+
+    .tienda5 {
+
         grid-column: 1/2;
         grid-row: 2/3;
-        
-    }
-    
 
-    
-    
-    .tienda6{
-        
+    }
+
+
+
+
+    .tienda6 {
+
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    
-    
 
-    
-    .tienda7{
-        
+
+
+
+    .tienda7 {
+
 
         grid-column: 3/4;
         grid-row: 2/3;
     }
 
-    
-    .tienda8{ 
+
+    .tienda8 {
         grid-column: 4/5;
         grid-row: 2/3;
     }
 
-    
-    .tienda9{
-        
+
+    .tienda9 {
+
         grid-column: 1/2;
         grid-row: 3/4;
-        
-    }
-    
 
-    
-    
-    .tienda_10{
-        
+    }
+
+
+
+
+    .tienda_10 {
+
         grid-column: 2/3;
         grid-row: 3/4;
     }
-    
-    
 
-    
-    .tienda_11{
-        
+
+
+
+    .tienda_11 {
+
         grid-column: 3/4;
         grid-row: 3/4;
     }
 
-    
-    .tienda_12{
-        
+
+    .tienda_12 {
+
 
         grid-column: 4/5;
         grid-row: 3/4;
     }
-    
+
 }
 
 @media only screen and (min-width: 2560px) {
 
-    .grid-tienda{
+    .grid-tienda {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto ;
-        grid-gap:  80px ;
+        grid-template-rows: auto;
+        grid-gap: 80px;
         margin-left: 300px;
 
-        
 
-    
+
+
     }
 
-    
-    .subTitulo{
+
+    .subTitulo {
         font-size: 75px;
         margin-left: 38%;
-    
+
     }
-    
-    .tienda1{
-        
+
+    .tienda1 {
+
         width: 300px;
         grid-column: 1/2;
         grid-row: 1/2;
-        
-        
-    }
-    
 
-    
-    .tienda2{
+
+    }
+
+
+
+    .tienda2 {
         width: 300px;
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    
-    
 
-    
-    .tienda3{
+
+
+
+    .tienda3 {
         width: 300px;
         grid-column: 3/4;
         grid-row: 1/2;
     }
 
-    
-    .tienda4{
+
+    .tienda4 {
         width: 300px;
         grid-column: 4/5;
         grid-row: 1/2;
-        
+
     }
 
-    
-    
-    .tienda5{
+
+
+    .tienda5 {
         width: 300px;
         grid-column: 5/6;
         grid-row: 1/2;
-        
-    }
-    
 
-    
-    
-    .tienda6{
-        
+    }
+
+
+
+
+    .tienda6 {
+
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    
-    
 
-    
-    .tienda7{
+
+
+
+    .tienda7 {
         width: 300px;
         grid-column: 2/3;
         grid-row: 2/3;
     }
 
-    
-    .tienda8{ 
+
+    .tienda8 {
         width: 300px;
         grid-column: 3/4;
         grid-row: 2/3;
     }
 
-    
-    .tienda9{
+
+    .tienda9 {
         width: 300px;
         grid-column: 4/5;
         grid-row: 2/3;
-        
-    }
-    
 
-    
-    
-    .tienda_10{
+    }
+
+
+
+
+    .tienda_10 {
         width: 300px;
         grid-column: 5/6;
         grid-row: 2/3;
     }
-    
-    
 
-    
-    .tienda_11{
+
+
+
+    .tienda_11 {
         width: 300px;
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
-    
-    .tienda_12{
+
+    .tienda_12 {
         width: 300px;
         grid-column: 2/3;
         grid-row: 3/4;
     }
-    
+
 }
 
 
@@ -2555,12 +2607,12 @@ footer{
 
 
 
-.fondoRegis{
+.fondoRegis {
     width: 100%;
     height: 100vh;
 }
 
-.fondoRegis img{
+.fondoRegis img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -2568,21 +2620,21 @@ footer{
 
 }
 
-.irA{
+.irA {
     position: relative;
     top: 70%;
-    left: 43.5%;
+    left: 25%;
     height: 30%;
     font-size: 20px;
     color: beige;
 }
 
-.irA:hover{
-    color: coral;
+.irA:hover {
+    color: red;
     transition: 500ms;
 }
 
-.registro2{
+.registro2 {
     background-color: rgb(28, 29, 29);
     width: 800px;
     font-size: 18px;
@@ -2623,7 +2675,7 @@ footer{
     display: inline-block;
     padding-top: 10px;
     left: 18px;
-    
+
 }
 
 .contraseña {
@@ -2632,8 +2684,8 @@ footer{
     position: relative;
     top: 88px;
     right: 330px;
-    
-    
+
+
 }
 
 .email {
@@ -2644,7 +2696,7 @@ footer{
     left: 25px;
 }
 
-.terminos{
+.terminos {
     display: inline-block;
     font-size: 18px;
     position: relative;
@@ -2653,16 +2705,16 @@ footer{
 
 }
 
-.terminos a{
+.terminos a {
     color: rgb(61, 61, 59);
 }
 
-.terminos a:hover{
+.terminos a:hover {
     color: rgb(92, 85, 85);
     transition: 500ms;
 }
 
-.regis{
+.regis {
     position: relative;
     background-color: rgb(105, 109, 109);
     font-size: 20px;
@@ -2671,10 +2723,10 @@ footer{
     color: beige;
     border-radius: 12px;
     border: solid;
-    
+
 }
 
-.regis:hover{
+.regis:hover {
     color: rgb(39, 38, 38);
     transition: 500ms;
 }
@@ -2687,12 +2739,12 @@ footer{
     right: 50px;
 }
 
-.yaTengo a{
+.yaTengo a {
     color: rgb(61, 61, 59);
 
 }
 
-.yaTengo a:hover{
+.yaTengo a:hover {
     color: rgb(92, 85, 85);
     transition: 500ms;
 }
@@ -2702,57 +2754,15 @@ footer{
 
 
 /**-----------------------------Empieza pag logeo---------------------------*/
-
-
-.fondoLogeo{
-    width: 100%;
-    height: 100vh;
+.bodyLo{
+    background: #ffe259;
+    background: linear-gradient(to right, #ffa751, #ffe259) ;
 }
-
-.fondoLogeo img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
+.bg {
+    background-image: url(../imagenes/logeo2.png);
+    background-position: center center;
 
 }
-
-
-.tituLogeo{
-    background-color: rgb(83, 83, 83);
-    width: 600px;
-    font-size: 38px;
-    text-align: center;
-    color: beige;
-    
-    
-
-}
-
-.logeo2{
-    background-color: rgb(35, 34, 36);
-    width: 600px;
-    text-align: center;
-    position: absolute;
-    top: 30%;
-    left: 35%;
-    height: 350px;
-
-}
-
-.logeo3{
-    position: relative;
-    top: 35%;
-    font-size: 15px;
-    
-}
-
-.logeo3 a{
-    color: beige;
-    position: relative;
-    top: 15px;
-}
-
 
 /*--------------------------------Termina logeo---------------------------------------*/
 
@@ -2760,35 +2770,36 @@ footer{
 /*-----------------------------------------Empieza Nosotros------------------------------------------------*/
 
 
-.colorNos{
+.colorNos {
     background-color: rgb(51, 49, 25);
-    
+
 }
-.tex1{
-    
+
+.tex1 {
+
     width: 55%;
     position: relative;
     left: 20%;
     margin-top: 25px;
     color: beige;
-    
+
 }
 
-.equip{
+.equip {
     position: relative;
     top: 40%;
     left: 30%;
-    
+
 }
 
-.tex2{
+.tex2 {
     position: relative;
     top: 85%;
     width: 55%;
     left: 20%;
     color: beige;
     margin-bottom: 25px;
-    
+
 }
 
 
@@ -2796,7 +2807,7 @@ footer{
 
 /*-------------------------------------------Empieza Contactenos----------------------------------------------*/
 
-.formCont{
+.formCont {
     background-color: rgb(77, 76, 77);
     width: 35%;
     position: absolute;
@@ -2814,43 +2825,44 @@ footer{
 }
 
 
-.fondoConta{
+.fondoConta {
     width: 100%;
     height: 100vh;
 }
 
-.fondoConta img{
+.fondoConta img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     display: block;
 
 }
-.nombreConta{
-    
+
+.nombreConta {
+
     width: 50%;
     position: relative;
     left: 151px;
 
 }
 
-.apellidoConta{
+.apellidoConta {
     width: 50%;
     position: relative;
     left: 149px;
     top: 10px;
-    
+
 }
 
-.emailConta{
+.emailConta {
     width: 50%;
-    
+
     position: relative;
     left: 165px;
     top: 20px;
 }
 
-.comenConta{
+.comenConta {
 
     width: 100%;
     position: relative;
@@ -2865,7 +2877,7 @@ footer{
 
 
 /*------------------------------------------------Empieza Manga---------------------------------------------*/
-.contenedorManga{
+.contenedorManga {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: auto auto auto;
@@ -2874,43 +2886,44 @@ footer{
     margin: 0 auto;
     padding: 20px;
     grid-gap: 30px;
-        
-    
+
+
 }
 
-.titulo2{
+.titulo2 {
     color: beige;
-    
+
 }
 
-.capitulo{
+.capitulo {
     color: rgb(93, 93, 97);
     font-size: 18px;
 }
 
-.descripcion2{
+.descripcion2 {
     color: beige;
 }
-.colorFondo{
+
+.colorFondo {
     background-color: rgb(66, 14, 14);
     height: 100%;
 }
 
-.subTitulo2{
-    
+.subTitulo2 {
+
     text-align: center;
     width: 100%;
     position: absolute;
     top: 120px;
     font-size: 35px;
     padding-top: 15px;
-    color:rgb(217, 221, 224);
+    color: rgb(217, 221, 224);
 
 
 }
 
-.anime1{
-    
+.anime1 {
+
     width: 300px;
     border-radius: 15px;
     border-color: rgb(7, 2, 26);
@@ -2920,21 +2933,22 @@ footer{
     text-align: center;
     margin: 55px;
     grid-column: 1/2;
-    
-    
+
+
 }
 
-.anime1 img{
+.anime1 img {
     height: 350px;
 }
-.anime1 a{
+
+.anime1 a {
     text-decoration: none;
 }
 
-.anime1 a p{
+.anime1 a p {
     font-size: 25px;
     color: rgb(131, 7, 7);
-    
+
 }
 
 
@@ -2942,8 +2956,8 @@ footer{
     font-size: 18px;
 }
 
-.anime2{
-    
+.anime2 {
+
     width: 300px;
     border-radius: 15px;
     border-color: rgb(7, 2, 26);
@@ -2954,22 +2968,24 @@ footer{
     margin: 55px;
     grid-column: 2/3;
 }
-.anime2 img{
+
+.anime2 img {
     height: 350px;
 }
 
-.anime2 a{
+.anime2 a {
     text-decoration: none;
 }
-.anime2 a p{
+
+.anime2 a p {
     font-size: 25px;
     color: rgb(131, 7, 7);
-    
+
 }
 
 
-.anime3{
-    
+.anime3 {
+
     width: 300px;
     border-radius: 15px;
     border-color: rgb(7, 2, 26);
@@ -2980,22 +2996,24 @@ footer{
     margin: 55px;
     grid-column: 3/4;
 }
-.anime3 img{
+
+.anime3 img {
     height: 350px;
 }
 
-.anime3 a{
+.anime3 a {
     text-decoration: none;
 }
-.anime3 a p{
+
+.anime3 a p {
     font-size: 25px;
     color: rgb(131, 7, 7);
-    
+
 }
 
 
-.anime4{
-    
+.anime4 {
+
     width: 300px;
     border-radius: 15px;
     border-color: rgb(7, 2, 26);
@@ -3007,24 +3025,25 @@ footer{
     grid-column: 4/5;
 
 }
-.anime4 img{
+
+.anime4 img {
     height: 350px;
 }
 
-.anime4 a{
+.anime4 a {
     text-decoration: none;
 }
 
-.anime4 a p{
+.anime4 a p {
     font-size: 25px;
     color: rgb(131, 7, 7);
-    
+
 }
 
 
 
-.anime5{
-    
+.anime5 {
+
     width: 300px;
     border-radius: 15px;
     border-color: rgb(7, 2, 26);
@@ -3035,23 +3054,24 @@ footer{
     margin: 55px;
     grid-column: 5/6;
 }
-.anime5 img{
+
+.anime5 img {
     height: 350px;
 }
 
-.anime5 a{
+.anime5 a {
     text-decoration: none;
 }
 
-.anime5 a p{
+.anime5 a p {
     font-size: 25px;
     color: rgb(131, 7, 7);
-    
+
 }
 
 
 .anime6 {
-    
+
     width: 300px;
     border-radius: 15px;
     border-color: rgb(7, 2, 26);
@@ -3064,1435 +3084,1481 @@ footer{
     margin: 55px;
     grid-column: 1/2;
 }
-.anime6 img{
+
+.anime6 img {
     height: 350px;
 }
 
-.anime6 a{
+.anime6 a {
     text-decoration: none;
 }
 
 
-.anime6 a p{
+.anime6 a p {
     font-size: 25px;
     color: rgb(131, 7, 7);
-    
+
 }
 
 
 
-    .titulo2{
-        color: rgb(50, 26, 184);
+.titulo2 {
+    color: rgb(50, 26, 184);
+}
+
+.anime7 {
+
+    width: 300px;
+    border-radius: 15px;
+    border-color: rgb(7, 2, 26);
+    border-style: solid;
+    background-color: rgb(62, 15, 105);
+    font-size: 18px;
+    text-align: center;
+    margin: 55px;
+    grid-column: 2/3;
+
+}
+
+.anime7 img {
+    height: 350px;
+}
+
+.anime7 a {
+    text-decoration: none;
+}
+
+.anime7 a p {
+    font-size: 25px;
+    color: rgb(131, 7, 7);
+
+}
+
+
+.anime8 {
+
+    width: 300px;
+    border-radius: 15px;
+    border-color: rgb(7, 2, 26);
+    border-style: solid;
+    background-color: rgb(62, 15, 105);
+    font-size: 18px;
+    text-align: center;
+    margin: 55px;
+    grid-column: 3/4;
+}
+
+.anime8 img {
+    height: 350px;
+}
+
+.anime8 a {
+    text-decoration: none;
+}
+
+.anime8 a p {
+    font-size: 25px;
+    color: rgb(131, 7, 7);
+
+}
+
+
+.anime9 {
+
+    width: 300px;
+    border-radius: 15px;
+    border-color: rgb(7, 2, 26);
+    border-style: solid;
+    font-size: 18px;
+    background-color: rgb(62, 15, 105);
+    text-align: center;
+    margin: 55px;
+    grid-column: 4/5;
+}
+
+.anime9 img {
+    height: 350px;
+}
+
+.anime9 a {
+    text-decoration: none;
+}
+
+.anime9 a p {
+    font-size: 25px;
+    color: rgb(131, 7, 7);
+
+}
+
+
+.anime10 {
+
+    width: 300px;
+    border-radius: 15px;
+    border-color: rgb(7, 2, 26);
+    border-style: solid;
+    font-size: 18px;
+    background-color: rgb(62, 15, 105);
+    text-align: center;
+    margin: 55px;
+    grid-column: 5/6;
+
+}
+
+.anime10 img {
+    height: 350px;
+}
+
+.anime10 a {
+    text-decoration: none;
+}
+
+.anime10 a p {
+    font-size: 25px;
+    color: rgb(131, 7, 7);
+
+}
+
+
+
+.anime11 {
+
+    width: 300px;
+    border-radius: 15px;
+    border-color: rgb(7, 2, 26);
+    border-style: solid;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(62, 15, 105);
+    margin: 55px;
+    grid-column: 1/2;
+}
+
+.anime11 img {
+    height: 350px;
+}
+
+.anime11 a {
+    text-decoration: none;
+}
+
+.anime11 a p {
+    font-size: 25px;
+    color: rgb(131, 7, 7);
+
+}
+
+
+.anime12 {
+
+    width: 300px;
+    border-radius: 15px;
+    border-color: rgb(7, 2, 26);
+    border-style: solid;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(62, 15, 105);
+    margin-bottom: 25px;
+    margin: 55px;
+    grid-column: 2/3;
+}
+
+.anime12 img {
+    height: 350px;
+}
+
+.anime12 a {
+    text-decoration: none;
+}
+
+
+.anime12 a p {
+    font-size: 25px;
+    color: rgb(131, 7, 7);
+
+}
+
+@media only screen and (min-width:320px) {
+    .contenedorManga {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 80%;
+
+
     }
 
-    .anime7{
-        
-        width: 300px;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        background-color: rgb(62, 15, 105);
-        font-size: 18px;
-        text-align: center;
-        margin: 55px;
-        grid-column: 2/3;
-        
-    }
-    
-    .anime7 img{
-        height: 350px;
-    }
-    .anime7 a{
-        text-decoration: none;
-    }
-    
-    .anime7 a p{
-        font-size: 25px;
-        color: rgb(131, 7, 7);
-        
+    .titulo2 {
+        color: beige;
+
     }
 
-    
-    .anime8{
-        
-        width: 300px;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        background-color: rgb(62, 15, 105);
-        font-size: 18px;
+    .subTitulo2 {
+        width: 100%;
+        position: absolute;
         text-align: center;
-        margin: 55px;
-        grid-column: 3/4;
+        top: 90px;
+        font-size: 23px;
+        padding: 15px;
+        color: beige;
+
     }
-    .anime8 img{
-        height: 350px;
+
+
+    .anime1 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+
+
     }
-    
-    .anime8 a{
-        text-decoration: none;
+
+    .anime1 img {
+        height: 250px;
     }
-    .anime8 a p{
-        font-size: 25px;
+
+    .anime1 a p {
+        font-size: 18px;
         color: rgb(131, 7, 7);
-        
+
     }
-    
-    
-    .anime9{
-        
-        width: 300px;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        background-color: rgb(62, 15, 105);
-        text-align: center;
-        margin: 55px;
-        grid-column: 4/5;
+
+    .anime1 .descripcion2 {
+        font-size: 12px;
+        color: beige;
     }
-    .anime9 img{
-        height: 350px;
-    }
-    
-    .anime9 a{
-        text-decoration: none;
-    }
-    .anime9 a p{
-        font-size: 25px;
-        color: rgb(131, 7, 7);
-        
-    }
-    
-    
-    .anime10{
-        
-        width: 300px;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        background-color: rgb(62, 15, 105);
-        text-align: center;
-        margin: 55px;
-        grid-column: 5/6;
-    
-    }
-    .anime10 img{
-        height: 350px;
-    }
-    
-    .anime10 a{
-        text-decoration: none;
-    }
-    
-    .anime10 a p{
-        font-size: 25px;
-        color: rgb(131, 7, 7);
-        
-    }
-    
-    
-    
-    .anime11{
-        
-        width: 300px;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
-        font-size: 18px;
-        text-align: center;
-        background-color: rgb(62, 15, 105);
-        margin: 55px;
+
+    .anime2 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
         grid-column: 1/2;
     }
-    .anime11 img{
-        height: 350px;
+
+    .anime2 img {
+        height: 250px;
     }
-    
-    .anime11 a{
-        text-decoration: none;
-    }
-    
-    .anime11 a p{
-        font-size: 25px;
-        color: rgb(131, 7, 7);
-        
-    }
-    
-    
-    .anime12 {
-        
-        width: 300px;
-        border-radius: 15px;
-        border-color: rgb(7, 2, 26);
-        border-style: solid;
+
+    .anime2 a p {
         font-size: 18px;
-        text-align: center;
-        margin-top: 20px;
-        background-color: rgb(62, 15, 105);
-        margin-bottom: 25px;
-        margin: 55px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime2 .descripcion2 {
+        font-size: 12px;
+        color: beige;
+    }
+
+
+
+    .anime3 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+    }
+
+    .anime3 img {
+        height: 250px;
+    }
+
+    .anime3 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime3 .descripcion2 {
+        font-size: 12px;
+    }
+
+    .anime4 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+
+    }
+
+    .anime4 img {
+        height: 250px;
+    }
+
+
+    .anime4 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime4 .descripcion2 {
+        font-size: 12px;
+    }
+
+    .anime5 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+    }
+
+    .anime5 img {
+        height: 250px;
+    }
+
+
+    .anime5 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime5 .descripcion2 {
+        font-size: 12px;
+    }
+
+    .anime6 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+    }
+
+    .anime6 img {
+        height: 250px;
+    }
+
+
+    .anime6 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime6 .descripcion2 {
+        font-size: 12px;
+
+    }
+
+
+    .anime7 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+
+    }
+
+    .anime7 img {
+        height: 250px;
+    }
+
+    .anime7 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime7 .descripcion2 {
+        font-size: 12px;
+    }
+
+    .anime8 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+    }
+
+    .anime8 img {
+        height: 250px;
+    }
+
+    .anime8 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime8 .descripcion2 {
+        font-size: 12px;
+    }
+
+    .anime9 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+    }
+
+    .anime9 img {
+        height: 250px;
+    }
+
+
+    .anime9 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime9 .descripcion2 {
+        font-size: 12px;
+    }
+
+
+    .anime10 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+
+    }
+
+    .anime10 img {
+        height: 250px;
+    }
+
+
+    .anime10 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime10 .descripcion2 {
+        font-size: 12px;
+    }
+
+
+
+    .anime11 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+    }
+
+    .anime11 img {
+        height: 250px;
+    }
+
+
+    .anime11 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime11 .descripcion2 {
+        font-size: 12px;
+    }
+
+
+    .anime12 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+
+    }
+
+    .anime12 img {
+        height: 250px;
+    }
+
+    .anime12 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime12 .descripcion2 {
+        font-size: 12px;
+    }
+
+}
+
+
+
+@media only screen and (min-width:768px) {
+    .contenedorManga {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        width: 80%;
+        margin: 80px;
+
+
+    }
+
+    .titulo2 {
+        color: beige;
+
+    }
+
+    .subTitulo2 {
+        font-size: 40px;
+
+    }
+
+
+    .anime1 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+
+
+    }
+
+    .anime1 img {
+        height: 250px;
+    }
+
+    .anime1 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime1 .descripcion2 {
+        font-size: 12px;
+        color: beige;
+    }
+
+    .anime2 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
         grid-column: 2/3;
     }
-    .anime12 img{
-        height: 350px;
+
+    .anime2 img {
+        height: 250px;
     }
-    
-    .anime12 a{
-        text-decoration: none;
-    }
-    
-    
-    .anime12 a p{
-        font-size: 25px;
+
+    .anime2 a p {
+        font-size: 18px;
         color: rgb(131, 7, 7);
-        
+
     }
 
-    @media only screen and (min-width:320px) 
-    
-    {
-            .contenedorManga{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            width: 80%;
-            
-            
-        }
-        .titulo2{
-                color: beige;
-                
-            }
+    .anime2 .descripcion2 {
+        font-size: 12px;
+        color: beige;
+    }
 
-        .subTitulo2{
-            width: 100%;
-            position: absolute;
-            text-align: center;
-            top: 90px;   
-            font-size: 23px;
-            padding: 15px;
-            color: beige;  
-        
-        }
-        
-        
-        .anime1{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-            
-            
-        }
-        
-        .anime1 img{
-            height: 250px;
-        }
-        
-        .anime1 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
 
-        .anime1 .descripcion2{
-            font-size: 12px;
-            color: beige;
-        }
-        
-        .anime2{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-        }
-        .anime2 img{
-            height: 250px;
-        }
-        
-        .anime2 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
 
-        .anime2 .descripcion2{
-            font-size: 12px;
-            color: beige;
-        }
-        
-        
-        
-        .anime3{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-        }
-        .anime3 img{
-            height: 250px;
-        }
-        
-        .anime3 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime3 .descripcion2{
-            font-size: 12px;
-        }
-        
-        .anime4{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-        
-        }
-        .anime4 img{
-            height: 250px;
-        }
-        
-        
-        .anime4 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime4 .descripcion2{
-            font-size: 12px;
-        }
-        
-        .anime5{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-        }
-        .anime5 img{
-            height: 250px;
-        }
-        
-        
-        .anime5 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime5 .descripcion2{
-            font-size: 12px;
-        }
-        
-        .anime6 {
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-        }
-        .anime6 img{
-            height: 250px;
-        }
-        
-        
-        .anime6 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime6 .descripcion2{
-            font-size: 12px;
-            
-        }
+    .anime3 {
 
-        
-        .anime7{
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 1/2;
-                
-            }
-            
-            .anime7 img{
-                height: 250px;
-            }
-            
-            .anime7 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
-            .anime7 .descripcion2{
-                font-size: 12px;
-            }
-            
-            .anime8{
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 1/2;
-            }
-            .anime8 img{
-                height: 250px;
-            }
-            
-            .anime8 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+    }
 
-            .anime8 .descripcion2{
-                font-size: 12px;
-            }
-            
-            .anime9{
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 1/2;
-            }
-            .anime9 img{
-                height: 250px;
-            }
-            
-            
-            .anime9 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
+    .anime3 img {
+        height: 250px;
+    }
 
-            .anime9 .descripcion2{
-                font-size: 12px;
-            }
-            
-            
-            .anime10{
-                
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-            
-            }
-            .anime10 img{
-                height: 250px;
-            }
-            
-            
-            .anime10 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
+    .anime3 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
 
-            .anime10 .descripcion2{
-                font-size: 12px;
-            }
-            
-            
-            
-            .anime11{
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 1/2;
-            }
-            .anime11 img{
-                height: 250px;
-            }
-            
-            
-            .anime11 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
+    }
 
-            .anime11 .descripcion2{
-                font-size: 12px;
-            }
-            
-            
-            .anime12 {
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 1/2;
-            
-            }
+    .anime3 .descripcion2 {
+        font-size: 12px;
+    }
 
-            .anime12 img{
-                height: 250px;
-            }
-            
-            .anime12 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
+    .anime4 {
 
-            .anime12 .descripcion2{
-                font-size: 12px;
-            }
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 2/3;
+
+    }
+
+    .anime4 img {
+        height: 250px;
+    }
+
+
+    .anime4 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime4 .descripcion2 {
+        font-size: 12px;
+    }
+
+    .anime5 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+    }
+
+    .anime5 img {
+        height: 250px;
+    }
+
+
+    .anime5 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime5 .descripcion2 {
+        font-size: 12px;
+    }
+
+    .anime6 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 2/3;
+    }
+
+    .anime6 img {
+        height: 250px;
+    }
+
+
+    .anime6 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime6 .descripcion2 {
+        font-size: 12px;
 
     }
 
 
-    
-    @media only screen and (min-width:768px) 
-    
-    {
-            .contenedorManga{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto;
-            width: 80%;
-            margin: 80px;
-            
-            
-        }
-        .titulo2{
-                color: beige;
-                
-            }
+    .anime7 {
 
-        .subTitulo2{
-            font-size: 40px;
-        
-        }
-        
-        
-        .anime1{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-            
-            
-        }
-        
-        .anime1 img{
-            height: 250px;
-        }
-        
-        .anime1 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-
-        .anime1 .descripcion2{
-            font-size: 12px;
-            color: beige;
-        }
-        
-        .anime2{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 2/3;
-        }
-        .anime2 img{
-            height: 250px;
-        }
-        
-        .anime2 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-
-        .anime2 .descripcion2{
-            font-size: 12px;
-            color: beige;
-        }
-        
-        
-        
-        .anime3{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-        }
-        .anime3 img{
-            height: 250px;
-        }
-        
-        .anime3 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime3 .descripcion2{
-            font-size: 12px;
-        }
-        
-        .anime4{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 2/3;
-        
-        }
-        .anime4 img{
-            height: 250px;
-        }
-        
-        
-        .anime4 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime4 .descripcion2{
-            font-size: 12px;
-        }
-        
-        .anime5{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-        }
-        .anime5 img{
-            height: 250px;
-        }
-        
-        
-        .anime5 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime5 .descripcion2{
-            font-size: 12px;
-        }
-        
-        .anime6 {
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 2/3;
-        }
-        .anime6 img{
-            height: 250px;
-        }
-        
-        
-        .anime6 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime6 .descripcion2{
-            font-size: 12px;
-            
-        }
-
-        
-        .anime7{
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 1/2;
-                
-            }
-            
-            .anime7 img{
-                height: 250px;
-            }
-            
-            .anime7 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
-            .anime7 .descripcion2{
-                font-size: 12px;
-            }
-            
-            .anime8{
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 2/3;
-            }
-            .anime8 img{
-                height: 250px;
-            }
-            
-            .anime8 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
-
-            .anime8 .descripcion2{
-                font-size: 12px;
-            }
-            
-            .anime9{
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 1/2;
-            }
-            .anime9 img{
-                height: 250px;
-            }
-            
-            
-            .anime9 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
-
-            .anime9 .descripcion2{
-                font-size: 12px;
-            }
-            
-            
-            .anime10{
-                
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 2/3;
-            
-            }
-            .anime10 img{
-                height: 250px;
-            }
-            
-            
-            .anime10 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
-
-            .anime10 .descripcion2{
-                font-size: 12px;
-            }
-            
-            
-            
-            .anime11{
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 1/2;
-            }
-            .anime11 img{
-                height: 250px;
-            }
-            
-            
-            .anime11 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
-
-            .anime11 .descripcion2{
-                font-size: 12px;
-            }
-            
-            
-            .anime12 {
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 2/3;
-            
-            }
-
-            .anime12 img{
-                height: 250px;
-            }
-            
-            .anime12 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
-
-            .anime12 .descripcion2{
-                font-size: 12px;
-            }
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
 
     }
-    @media only screen and (min-width: 1024px) {
 
-        .subTitulo2{
-            font-size: 40px;
-            margin-top: 80px;
-            
-        
-        }
-
-        
+    .anime7 img {
+        height: 250px;
     }
 
-    @media only screen and (min-width:1440px)
-    
-    {
-            .contenedorManga{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto;
-            width: 80%;
-            margin: 200px;
-            
-            
-        }
-        .titulo2{
-                color: beige;
-                
-            }
+    .anime7 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
 
-        .subTitulo2{
-            width: 100%;
-            position: absolute;
-            text-align: center;
-            top: 100px;   
-            font-size: 70px;
-            padding: 15px;
-            color: beige;  
-        
-        }
-        
-        
-        .anime1{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-            
-            
-        }
-        
-        .anime1 img{
-            height: 250px;
-        }
-        
-        .anime1 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
+    }
 
-        .anime1 .descripcion2{
-            font-size: 12px;
-            color: beige;
-        }
-        
-        .anime2{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 2/3;
-        }
-        .anime2 img{
-            height: 250px;
-        }
-        
-        .anime2 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
+    .anime7 .descripcion2 {
+        font-size: 12px;
+    }
 
-        .anime2 .descripcion2{
-            font-size: 12px;
-            color: beige;
-        }
-        
-        
-        
-        .anime3{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 3/4;
-        }
-        .anime3 img{
-            height: 250px;
-        }
-        
-        .anime3 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime3 .descripcion2{
-            font-size: 12px;
-        }
-        
-        .anime4{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-        
-        }
-        .anime4 img{
-            height: 250px;
-        }
-        
-        
-        .anime4 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime4 .descripcion2{
-            font-size: 12px;
-        }
-        
-        .anime5{
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 2/3;
-        }
-        .anime5 img{
-            height: 250px;
-        }
-        
-        
-        .anime5 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime5 .descripcion2{
-            font-size: 12px;
-        }
-        
-        .anime6 {
-            
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 3/4;
-        }
-        .anime6 img{
-            height: 250px;
-        }
-        
-        
-        .anime6 a p{
-            font-size: 18px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime6 .descripcion2{
-            font-size: 12px;
-            
-        }
+    .anime8 {
 
-        
-        .anime7{
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 1/2;
-                
-            }
-            
-            .anime7 img{
-                height: 250px;
-            }
-            
-            .anime7 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
-            .anime7 .descripcion2{
-                font-size: 12px;
-            }
-            
-            .anime8{
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 2/3;
-            }
-            .anime8 img{
-                height: 250px;
-            }
-            
-            .anime8 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 2/3;
+    }
 
-            .anime8 .descripcion2{
-                font-size: 12px;
-            }
-            
-            .anime9{
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 3/4;
-            }
-            .anime9 img{
-                height: 250px;
-            }
-            
-            
-            .anime9 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
+    .anime8 img {
+        height: 250px;
+    }
 
-            .anime9 .descripcion2{
-                font-size: 12px;
-            }
-            
-            
-            .anime10{
-                
-            width: 250px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-            
-            }
-            .anime10 img{
-                height: 250px;
-            }
-            
-            
-            .anime10 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
+    .anime8 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
 
-            .anime10 .descripcion2{
-                font-size: 12px;
-            }
-            
-            
-            
-            .anime11{
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 2/3;
-            }
-            .anime11 img{
-                height: 250px;
-            }
-            
-            
-            .anime11 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
+    }
 
-            .anime11 .descripcion2{
-                font-size: 12px;
-            }
-            
-            
-            .anime12 {
-                
-                width: 250px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 3/4;
-            
-            }
+    .anime8 .descripcion2 {
+        font-size: 12px;
+    }
 
-            .anime12 img{
-                height: 250px;
-            }
-            
-            .anime12 a p{
-                font-size: 18px;
-                color: rgb(131, 7, 7);
-                
-            }
+    .anime9 {
 
-            .anime12 .descripcion2{
-                font-size: 12px;
-            }
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+    }
+
+    .anime9 img {
+        height: 250px;
+    }
+
+
+    .anime9 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime9 .descripcion2 {
+        font-size: 12px;
+    }
+
+
+    .anime10 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 2/3;
+
+    }
+
+    .anime10 img {
+        height: 250px;
+    }
+
+
+    .anime10 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime10 .descripcion2 {
+        font-size: 12px;
+    }
+
+
+
+    .anime11 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+    }
+
+    .anime11 img {
+        height: 250px;
+    }
+
+
+    .anime11 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime11 .descripcion2 {
+        font-size: 12px;
+    }
+
+
+    .anime12 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 2/3;
+
+    }
+
+    .anime12 img {
+        height: 250px;
+    }
+
+    .anime12 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime12 .descripcion2 {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .subTitulo2 {
+        font-size: 40px;
+        margin-top: 80px;
+
 
     }
 
 
-    @media only screen and (min-width:2560px)
-    
-    {
-            .contenedorManga{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: auto;
-            width: 80%;
-            margin: 250px;
-            
-            
-        }
+}
 
-        .capitulo{
-            font-size: 28px;
-        }
-        .titulo2{
-                color: beige;
-                font-size: 35px;
-                
-            }
+@media only screen and (min-width:1440px) {
+    .contenedorManga {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        width: 80%;
+        margin: 200px;
 
-        .subTitulo2{
-            width: 100%;
-            position: absolute;
-            text-align: center;
-            top: 120px;   
-            font-size: 70px;
-            padding: 15px;
-            color: beige;  
-        
-        }
-        
-        
-        .anime1{
-            
-            width: 450px;
-            border-radius: 30px;
-            
-            grid-column: 1/2;
-            
-            
-        }
-
-        .anime1 .capitulo{
-            font-size: 28px;
-        }
-        
-        .anime1 img{
-            height: 450px;
-        }
-        
-        .anime1 a p{
-            font-size: 30px;
-            color: rgb(131, 7, 7);
-            
-        }
-
-        .anime1 .descripcion2{
-            font-size: 18px;
-            color: beige;
-        }
-        
-        .anime2{
-            
-            width: 450px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 2/3;
-        }
-        .anime2 img{
-            height: 450px;
-        }
-        
-        .anime2 a p{
-            font-size: 30px;
-            color: rgb(131, 7, 7);
-            
-        }
-
-        .anime2 .descripcion2{
-            font-size: 18px;
-            color: beige;
-        }
-        
-        
-        
-        .anime3{
-            
-            width: 450px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 3/4;
-        }
-        .anime3 img{
-            height: 450px;
-        }
-        
-        .anime3 a p{
-            font-size: 28px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime3 .descripcion2{
-            font-size: 18px;
-        }
-        
-        .anime4{
-            
-            width: 450px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 4/5;
-        
-        }
-        .anime4 img{
-            height: 450px;
-        }
-        
-        
-        .anime4 a p{
-            font-size: 28px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime4 .descripcion2{
-            font-size: 18px;
-        }
-        
-        .anime5{
-            
-            width: 450px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 1/2;
-        }
-        .anime5 img{
-            height: 450px;
-        }
-        
-        
-        .anime5 a p{
-            font-size: 28px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime5 .descripcion2{
-            font-size: 18px;
-        }
-        
-        .anime6 {
-            
-            width: 450px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 2/3;
-        }
-        .anime6 img{
-            height: 450px;
-        }
-        
-        
-        .anime6 a p{
-            font-size: 28px;
-            color: rgb(131, 7, 7);
-            
-        }
-        
-        .anime6 .descripcion2{
-            font-size: 18px;
-            
-        }
-
-        
-        .anime7{
-                
-                width: 450px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 3/4;
-                
-            }
-            
-            .anime7 img{
-                height: 450px;
-            }
-            
-            .anime7 a p{
-                font-size: 28px;
-                color: rgb(131, 7, 7);
-                
-            }
-            .anime7 .descripcion2{
-                font-size: 18px;
-            }
-            
-            .anime8{
-                
-                width: 450px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 4/5;
-            }
-            .anime8 img{
-                height: 450px;
-            }
-            
-            .anime8 a p{
-                font-size: 28px;
-                color: rgb(131, 7, 7);
-                
-            }
-
-            .anime8 .descripcion2{
-                font-size: 18px;
-            }
-            
-            .anime9{
-                
-                width: 450px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 1/2;
-            }
-            .anime9 img{
-                height: 450px;
-            }
-            
-            
-            .anime9 a p{
-                font-size: 28px;
-                color: rgb(131, 7, 7);
-                
-            }
-
-            .anime9 .descripcion2{
-                font-size: 18px;
-            }
-            
-            
-            .anime10{
-                
-            width: 450px;
-            border-radius: 30px;
-            font-size: 24px;
-            grid-column: 2/3;
-            
-            }
-            .anime10 img{
-                height: 450px;
-            }
-            
-            
-            .anime10 a p{
-                font-size: 28px;
-                color: rgb(131, 7, 7);
-                
-            }
-
-            .anime10 .descripcion2{
-                font-size: 18px;
-            }
-            
-            
-            
-            .anime11{
-                
-                width: 450px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 3/4;
-            }
-            .anime11 img{
-                height: 450px;
-            }
-            
-            
-            .anime11 a p{
-                font-size: 28px;
-                color: rgb(131, 7, 7);
-                
-            }
-
-            .anime11 .descripcion2{
-                font-size: 18px;
-            }
-            
-            
-            .anime12 {
-                
-                width: 450px;
-                border-radius: 30px;
-                font-size: 24px;
-                grid-column: 4/5;
-            
-            }
-
-            .anime12 img{
-                height: 450px;
-            }
-            
-            .anime12 a p{
-                font-size: 28px;
-                color: rgb(131, 7, 7);
-                
-            }
-
-            .anime12 .descripcion2{
-                font-size: 18px;
-            }
 
     }
+
+    .titulo2 {
+        color: beige;
+
+    }
+
+    .subTitulo2 {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 100px;
+        font-size: 70px;
+        padding: 15px;
+        color: beige;
+
+    }
+
+
+    .anime1 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+
+
+    }
+
+    .anime1 img {
+        height: 250px;
+    }
+
+    .anime1 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime1 .descripcion2 {
+        font-size: 12px;
+        color: beige;
+    }
+
+    .anime2 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 2/3;
+    }
+
+    .anime2 img {
+        height: 250px;
+    }
+
+    .anime2 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime2 .descripcion2 {
+        font-size: 12px;
+        color: beige;
+    }
+
+
+
+    .anime3 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 3/4;
+    }
+
+    .anime3 img {
+        height: 250px;
+    }
+
+    .anime3 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime3 .descripcion2 {
+        font-size: 12px;
+    }
+
+    .anime4 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+
+    }
+
+    .anime4 img {
+        height: 250px;
+    }
+
+
+    .anime4 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime4 .descripcion2 {
+        font-size: 12px;
+    }
+
+    .anime5 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 2/3;
+    }
+
+    .anime5 img {
+        height: 250px;
+    }
+
+
+    .anime5 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime5 .descripcion2 {
+        font-size: 12px;
+    }
+
+    .anime6 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 3/4;
+    }
+
+    .anime6 img {
+        height: 250px;
+    }
+
+
+    .anime6 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime6 .descripcion2 {
+        font-size: 12px;
+
+    }
+
+
+    .anime7 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+
+    }
+
+    .anime7 img {
+        height: 250px;
+    }
+
+    .anime7 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime7 .descripcion2 {
+        font-size: 12px;
+    }
+
+    .anime8 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 2/3;
+    }
+
+    .anime8 img {
+        height: 250px;
+    }
+
+    .anime8 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime8 .descripcion2 {
+        font-size: 12px;
+    }
+
+    .anime9 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 3/4;
+    }
+
+    .anime9 img {
+        height: 250px;
+    }
+
+
+    .anime9 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime9 .descripcion2 {
+        font-size: 12px;
+    }
+
+
+    .anime10 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+
+    }
+
+    .anime10 img {
+        height: 250px;
+    }
+
+
+    .anime10 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime10 .descripcion2 {
+        font-size: 12px;
+    }
+
+
+
+    .anime11 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 2/3;
+    }
+
+    .anime11 img {
+        height: 250px;
+    }
+
+
+    .anime11 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime11 .descripcion2 {
+        font-size: 12px;
+    }
+
+
+    .anime12 {
+
+        width: 250px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 3/4;
+
+    }
+
+    .anime12 img {
+        height: 250px;
+    }
+
+    .anime12 a p {
+        font-size: 18px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime12 .descripcion2 {
+        font-size: 12px;
+    }
+
+}
+
+
+@media only screen and (min-width:2560px) {
+    .contenedorManga {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        width: 80%;
+        margin: 250px;
+
+
+    }
+
+    .capitulo {
+        font-size: 28px;
+    }
+
+    .titulo2 {
+        color: beige;
+        font-size: 35px;
+
+    }
+
+    .subTitulo2 {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 120px;
+        font-size: 70px;
+        padding: 15px;
+        color: beige;
+
+    }
+
+
+    .anime1 {
+
+        width: 450px;
+        border-radius: 30px;
+
+        grid-column: 1/2;
+
+
+    }
+
+    .anime1 .capitulo {
+        font-size: 28px;
+    }
+
+    .anime1 img {
+        height: 450px;
+    }
+
+    .anime1 a p {
+        font-size: 30px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime1 .descripcion2 {
+        font-size: 18px;
+        color: beige;
+    }
+
+    .anime2 {
+
+        width: 450px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 2/3;
+    }
+
+    .anime2 img {
+        height: 450px;
+    }
+
+    .anime2 a p {
+        font-size: 30px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime2 .descripcion2 {
+        font-size: 18px;
+        color: beige;
+    }
+
+
+
+    .anime3 {
+
+        width: 450px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 3/4;
+    }
+
+    .anime3 img {
+        height: 450px;
+    }
+
+    .anime3 a p {
+        font-size: 28px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime3 .descripcion2 {
+        font-size: 18px;
+    }
+
+    .anime4 {
+
+        width: 450px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 4/5;
+
+    }
+
+    .anime4 img {
+        height: 450px;
+    }
+
+
+    .anime4 a p {
+        font-size: 28px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime4 .descripcion2 {
+        font-size: 18px;
+    }
+
+    .anime5 {
+
+        width: 450px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+    }
+
+    .anime5 img {
+        height: 450px;
+    }
+
+
+    .anime5 a p {
+        font-size: 28px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime5 .descripcion2 {
+        font-size: 18px;
+    }
+
+    .anime6 {
+
+        width: 450px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 2/3;
+    }
+
+    .anime6 img {
+        height: 450px;
+    }
+
+
+    .anime6 a p {
+        font-size: 28px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime6 .descripcion2 {
+        font-size: 18px;
+
+    }
+
+
+    .anime7 {
+
+        width: 450px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 3/4;
+
+    }
+
+    .anime7 img {
+        height: 450px;
+    }
+
+    .anime7 a p {
+        font-size: 28px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime7 .descripcion2 {
+        font-size: 18px;
+    }
+
+    .anime8 {
+
+        width: 450px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 4/5;
+    }
+
+    .anime8 img {
+        height: 450px;
+    }
+
+    .anime8 a p {
+        font-size: 28px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime8 .descripcion2 {
+        font-size: 18px;
+    }
+
+    .anime9 {
+
+        width: 450px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 1/2;
+    }
+
+    .anime9 img {
+        height: 450px;
+    }
+
+
+    .anime9 a p {
+        font-size: 28px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime9 .descripcion2 {
+        font-size: 18px;
+    }
+
+
+    .anime10 {
+
+        width: 450px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 2/3;
+
+    }
+
+    .anime10 img {
+        height: 450px;
+    }
+
+
+    .anime10 a p {
+        font-size: 28px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime10 .descripcion2 {
+        font-size: 18px;
+    }
+
+
+
+    .anime11 {
+
+        width: 450px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 3/4;
+    }
+
+    .anime11 img {
+        height: 450px;
+    }
+
+
+    .anime11 a p {
+        font-size: 28px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime11 .descripcion2 {
+        font-size: 18px;
+    }
+
+
+    .anime12 {
+
+        width: 450px;
+        border-radius: 30px;
+        font-size: 24px;
+        grid-column: 4/5;
+
+    }
+
+    .anime12 img {
+        height: 450px;
+    }
+
+    .anime12 a p {
+        font-size: 28px;
+        color: rgb(131, 7, 7);
+
+    }
+
+    .anime12 .descripcion2 {
+        font-size: 18px;
+    }
+
+}
 
 
 
