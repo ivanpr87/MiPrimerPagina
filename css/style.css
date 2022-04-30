@@ -2707,7 +2707,7 @@ footer {
     .tituR a {
         font-size: 45px;
     }
-
+}
     @media  (min-width: 768px) {
 
         .tituR a {
@@ -2762,7 +2762,7 @@ footer {
         left: 220px;
     }
 
-
+}
 
 /*---------------------------termina pag registro-------------------------*/
 
@@ -3486,8 +3486,6 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         width: 80%;
-
-
     }
 
     .titulo2 {
