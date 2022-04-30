@@ -2696,7 +2696,11 @@ footer {
         left: 5rem;
         top: 8px;
     }
-
+.row{
+    width: 99%;
+    height: 100%;
+    margin-left: 1px;
+}
     .irR {
         display: none;
     }
@@ -2776,6 +2780,7 @@ footer {
 
 }
 
+
 .irA {
     color: beige;
     text-decoration: none;
@@ -2792,6 +2797,7 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    background-color: #2d343f;
 }
 
 .bg {
@@ -2807,6 +2813,7 @@ footer {
         display: none;
 
     }
+    
 
     .tituL {
         font-size: 30px;
