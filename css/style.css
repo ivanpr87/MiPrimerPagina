@@ -3088,69 +3088,19 @@ footer {
 
 /*-------------------------------------------Empieza Contactenos----------------------------------------------*/
 
-.formCont {
-    background-color: rgb(77, 76, 77);
-    width: 35%;
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    border-style: groove;
-    border-radius: 20px;
-    border-color: rgb(12, 11, 11);
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-
-
-}
-
-
-.fondoConta {
-    width: 100%;
+.fondoCon{
+    background-image: url(../imagenes/FondoConta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
     height: 100vh;
 }
 
-.fondoConta img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-
+.cajacon{
+    
+    margin-top: 100px;
+    
+    
 }
-
-.nombreConta {
-
-    width: 50%;
-    position: relative;
-    left: 151px;
-
-}
-
-.apellidoConta {
-    width: 50%;
-    position: relative;
-    left: 149px;
-    top: 10px;
-
-}
-
-.emailConta {
-    width: 50%;
-
-    position: relative;
-    left: 165px;
-    top: 20px;
-}
-
-.comenConta {
-
-    width: 100%;
-    position: relative;
-    top: 20px;
-
-}
-
 
 
 
