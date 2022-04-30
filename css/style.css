@@ -2702,30 +2702,31 @@ footer {
     }
 }
 
-@media  (min-width: 425px) {
+@media (min-width: 425px) {
 
     .tituR a {
         font-size: 45px;
     }
 }
-    @media  (min-width: 768px) {
 
-        .tituR a {
-            font-size: 45px;
-            left: 18rem;
-        }
+@media (min-width: 768px) {
+
+    .tituR a {
+        font-size: 45px;
+        left: 18rem;
+    }
 
 
 }
 
-@media  (min-width: 1024px) {
+@media (min-width: 1024px) {
 
     .tituR a {
         font-size: 65px;
         left: 22rem;
     }
 
-    .irR{
+    .irR {
         display: flex;
         left: 15px;
     }
@@ -2750,14 +2751,14 @@ footer {
     }
 }
 
-@media  (min-width: 1440px) {
+@media (min-width: 1440px) {
 
     .tituR a {
         font-size: 65px;
         left: 35rem;
     }
 
-    .irR{
+    .irR {
         display: flex;
         left: 220px;
     }
@@ -3003,6 +3004,85 @@ footer {
 
 }
 
+
+@media (min-width:320px) {
+
+    
+    .equip{
+        left: 0;
+    }
+    
+    .equip img{
+        width: 300px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    
+
+    .tex1{
+        font-size: 14px;
+    }
+
+    .tex2{
+        font-size: 14px;
+    }
+    
+}
+
+@media (min-width:360px)  {
+
+    .equip img{
+        width: 350px;
+    }
+    
+}
+
+@media (min-width:425px)  {
+
+    .equip img{
+        width: 400px;
+    }
+    
+}
+
+
+@media (min-width:768px)  {
+
+    .equip img{
+        width: 700px;
+        margin-left: 30px;
+    }
+    
+}
+
+@media (min-width:1024px)  {
+
+    .equip img{
+        width: 900px;
+        margin-left: 50px;
+    }
+    
+}
+
+@media (min-width:1440px)  {
+
+    .equip img{
+        
+        margin-left: 250px;
+    }
+    
+}
+
+@media (min-width:2560px)  {
+
+    .equip img{
+        width: 1200px;
+        margin-left: 600px;
+    }
+    
+}
 
 /*-------------------------------------termina nosotros------------------------------------------*/
 
