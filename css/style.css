@@ -2605,149 +2605,163 @@ footer {
 
 /*-------------------------Empieza Registro-----------------------------*/
 
-
-
-.fondoRegis {
-    width: 100%;
-    height: 100vh;
-}
-
-.fondoRegis img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-
-}
-
-.irA {
-    position: relative;
-    top: 70%;
-    left: 25%;
-    height: 30%;
-    font-size: 20px;
+.tituR a {
+    font-size: 65px;
+    text-decoration: none;
     color: beige;
+    position: relative;
+    left: 35rem;
 }
 
-.irA:hover {
+.irR {
+    text-decoration: none;
+    font-size: 26px;
+    color: beige;
+    height: 30px;
+    display: flex;
+    position: relative;
+    top: 90px;
+    left: 220px;
+}
+
+.irR:hover {
     color: red;
-    transition: 500ms;
 }
 
-.registro2 {
-    background-color: rgb(28, 29, 29);
-    width: 800px;
-    font-size: 18px;
-    text-align: center;
-    position: absolute;
-    left: 40%;
-    top: 35%;
-    height: 500px;
-    color: beige;
+:root {
+    --color-dark: #15181f;
+    --color-dark-x: #2d343f;
+    --color-dark-xx: #1f232b;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
 }
 
-.colorRegistrate {
-    color: beige;
-    font-size: 40px;
+.bodyR {
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: var(--color-grey);
+    color: var(--color-light);
+    letter-spacing: .05rem;
+    background-color: rgb(59, 55, 55);
 }
 
-.nombre {
-    display: inline-block;
-    font-size: 18px;
-    position: relative;
-    top: 18px;
-
+.bg-light {
+    background-color: var(--color-light) !important;
 }
 
-.apellido {
-    display: inline-block;
-    font-size: 18px;
-    position: relative;
-    top: 18px;
+.bg-dark {
+    background-color: var(--color-dark) !important;
 }
 
-.usuario {
-
-    display: inline-block;
-    font-size: 18px;
-    position: relative;
-    top: 38px;
-    display: inline-block;
-    padding-top: 10px;
-    left: 18px;
-
+.p-6 {
+    padding: 4rem 7rem;
 }
 
-.contraseña {
-    display: inline-block;
-    font-size: 18px;
-    position: relative;
-    top: 88px;
-    right: 330px;
-
-
+.contact-box {
+    padding: 3rem;
 }
 
-.email {
-    display: inline-block;
-    font-size: 18px;
-    position: relative;
-    top: 110px;
-    left: 25px;
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
 }
 
-.terminos {
-    display: inline-block;
-    font-size: 18px;
-    position: relative;
-    top: 200px;
-    right: 150px;
-
+.btn-outline-dark {
+    border: 2px solid var(--color-dark-xx);
 }
 
-.terminos a {
-    color: rgb(61, 61, 59);
+.form-control {
+    background-color: var(--color-dark-xx);
+    border: 2px solid var(--color-dark-xx);
+    border-radius: .2rem;
+    padding: 1.5rem 1rem;
 }
 
-.terminos a:hover {
-    color: rgb(92, 85, 85);
-    transition: 500ms;
+.register-bg {
+    background-image: url(../imagenes/FondoRegistro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
-.regis {
-    position: relative;
-    background-color: rgb(105, 109, 109);
-    font-size: 20px;
-    top: 260px;
-    left: 100px;
-    color: beige;
-    border-radius: 12px;
-    border: solid;
+.testiomonial {
+    bottom: 10px
+}
+
+@media (min-width: 320px) {
+    .tituR a {
+        font-size: 35px;
+        left: 5rem;
+        top: 8px;
+    }
+
+    .irR {
+        display: none;
+    }
+}
+
+@media  (min-width: 425px) {
+
+    .tituR a {
+        font-size: 45px;
+    }
+
+    @media  (min-width: 768px) {
+
+        .tituR a {
+            font-size: 45px;
+            left: 18rem;
+        }
+
 
 }
 
-.regis:hover {
-    color: rgb(39, 38, 38);
-    transition: 500ms;
-}
+@media  (min-width: 1024px) {
 
-.yaTengo {
-    display: inline-block;
-    font-size: 18px;
-    position: relative;
-    top: 300px;
-    right: 50px;
-}
+    .tituR a {
+        font-size: 65px;
+        left: 22rem;
+    }
 
-.yaTengo a {
-    color: rgb(61, 61, 59);
+    .irR{
+        display: flex;
+        left: 15px;
+    }
+
 
 }
 
-.yaTengo a:hover {
-    color: rgb(92, 85, 85);
-    transition: 500ms;
+@media (max-width: 575.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .contact-box {
+        padding: 0;
+    }
+
 }
+
+@media (max-width: 1200px) {
+    .register-bg {
+        min-height: 50vh;
+    }
+}
+
+@media  (min-width: 1440px) {
+
+    .tituR a {
+        font-size: 65px;
+        left: 35rem;
+    }
+
+    .irR{
+        display: flex;
+        left: 220px;
+    }
+
 
 
 /*---------------------------termina pag registro-------------------------*/
@@ -2757,7 +2771,19 @@ footer {
 .tituL a {
     text-decoration: none;
     color: beige;
+    margin-top: 8px;
 
+}
+
+.irA {
+    color: beige;
+    text-decoration: none;
+    position: relative;
+    top: 90px
+}
+
+.irA:hover {
+    color: red;
 }
 
 .bodyLo {
