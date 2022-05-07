@@ -920,6 +920,7 @@ footer {
 
     p {
         color: beige;
+        margin-bottom: 0;
     }
 }
 
@@ -937,6 +938,8 @@ footer {
 
     p {
         color: beige;
+        margin-bottom: 0;
+
     }
 }
 
@@ -1131,6 +1134,7 @@ footer {
         p {
             font-size: 20px;
             width: max-content;
+            margin-bottom: 0;
         }
 
     }
@@ -1846,7 +1850,9 @@ footer {
         font-size: 18px;
         grid-column: 1/2;
 
-        margin-right: 70pximg {
+        margin-right: 70px;
+
+        img {
 
             height: 250px;
 

@@ -769,6 +769,7 @@ footer {
 
 .copy p {
     color: beige;
+    margin-bottom: 0;
 }
 
 .redes {
@@ -784,6 +785,7 @@ footer {
 
 .redes p {
     color: beige;
+    margin-bottom: 0;
 }
 
 .iconos3 {
@@ -1511,9 +1513,14 @@ footer {
         height: 450px;
         font-size: 18px;
         grid-column: 1/2;
-        margin-right: 70pximg;
-        margin-right-height: 250px;
+        margin-right: 70px;
     }
+
+    .img {
+        height: 250px;
+    }
+
+
 
     .tienda_12 p {
         font-size: 12px;
