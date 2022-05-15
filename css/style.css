@@ -2077,7 +2077,7 @@ footer {
   background-image: url(../imagenes/fondoLogeo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 120vh;
   background-color: #2d343f;
 }
 
@@ -2089,6 +2089,10 @@ footer {
 @media only screen and (min-width: 320px) {
   .irA {
     display: none;
+  }
+
+  .bodyLo {
+    min-height: 140vh;
   }
 
   .tituL {
@@ -2104,6 +2108,10 @@ footer {
     display: none;
   }
 
+  .bodyLo {
+    min-height: 135vh;
+  }
+
   .tituL a {
     font-size: 30px;
     position: relative;
@@ -2113,6 +2121,10 @@ footer {
 @media only screen and (min-width: 425px) {
   .irA {
     display: none;
+  }
+
+  .bodyLo {
+    min-height: 130vh;
   }
 
   .tituL a {
@@ -2128,6 +2140,10 @@ footer {
     left: 4rem;
   }
 
+  .bodyLo {
+    min-height: 130vh;
+  }
+
   .tituL a {
     font-size: 45px;
     left: 12rem;
@@ -2137,6 +2153,10 @@ footer {
   .irA {
     font-size: 24px;
     left: 1rem;
+  }
+
+  .bodyLo {
+    min-height: 140vh;
   }
 
   .tituL a {
@@ -2174,6 +2194,10 @@ footer {
     font-size: 24px;
     position: relative;
     left: 16rem;
+  }
+
+  .bodyLo {
+    min-height: 120vh;
   }
 
   .tituL a {

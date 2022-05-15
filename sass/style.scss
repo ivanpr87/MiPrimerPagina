@@ -2618,7 +2618,7 @@ $bc in $tienda {
     background-image: url(../imagenes/fondoLogeo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 120vh;
     background-color: #2d343f;
 }
 
@@ -2635,7 +2635,10 @@ $bc in $tienda {
         display: none;
 
     }
+    
+    .bodyLo {
 
+        min-height: 140vh;}
 
     .tituL {
         font-size: 30px;
@@ -2646,11 +2649,16 @@ $bc in $tienda {
     }
 }
 
+
 @media only screen and (min-width: 375px) {
 
     .irA {
         display: none;
     }
+
+    .bodyLo {
+
+        min-height: 135vh;}
 
     .tituL {
         a {
@@ -2667,6 +2675,10 @@ $bc in $tienda {
         display: none;
 
     }
+
+    .bodyLo {
+
+        min-height: 130vh;}
 
     .tituL {
         a {
@@ -2686,6 +2698,10 @@ $bc in $tienda {
 
     }
 
+    .bodyLo {
+
+        min-height: 130vh;}
+
     .tituL a {
         font-size: 45px;
         left: 12rem;
@@ -2698,7 +2714,9 @@ $bc in $tienda {
         font-size: 24px;
         left: 1rem;
     }
+    .bodyLo {
 
+        min-height: 140vh;}
     .tituL {
         a {
             font-size: 65px;
@@ -2752,6 +2770,9 @@ $bc in $tienda {
         left: 16rem;
 
     }
+    .bodyLo {
+
+        min-height: 120vh;}
 
     .tituL {
         a {
@@ -3146,6 +3167,7 @@ $bc in $tienda {
 .titulo2 {
     color: rgb(50, 26, 184);
 }
+
 
 
 @mixin tamaño ($ancho, $letra, $fondocolor, $bodercolor) {
