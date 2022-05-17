@@ -2559,6 +2559,7 @@ footer {
 .bg {
   background-image: url(../imagenes/logeo2.png);
   background-position: center center;
+  height: 500px;
 }
 
 @media only screen and (min-width: 320px) {
@@ -2603,8 +2604,10 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     font-size: 15px;
     left: 4rem;
+    top: 4rem;
   }
   .tituL a {
     font-size: 45px;
