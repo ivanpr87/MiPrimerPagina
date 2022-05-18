@@ -920,6 +920,7 @@ footer {
 
     p {
         color: beige;
+        margin-bottom: 0;
     }
 }
 
@@ -937,6 +938,7 @@ footer {
 
     p {
         color: beige;
+        margin-bottom: 0;
     }
 }
 
@@ -1267,6 +1269,11 @@ footer {
         padding-right: 15px;
         height: 50%;
     }
+
+    .descripcion{
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -1351,7 +1358,6 @@ footer {
     background-color: bisque;
     width: 300px;
     padding-left: 15px;
-
     height: 550px;
     text-align: center;
     border-radius: 15px;
@@ -2785,6 +2791,9 @@ footer {
     }
 }
 
+.altura {
+    height: 100vh;
+}
 
 .irA {
     color: beige;
@@ -2851,6 +2860,10 @@ footer {
 
     }
 
+    .altura{
+        height: 10px;
+    }
+
     .tituL {
         a {
             font-size: 35px;
@@ -2864,10 +2877,12 @@ footer {
 
     .irA {
         display: flex;
+        position: relative;
         font-size: 15px;
         left: 4rem;
+        top: 4rem;
+}
 
-    }
 
     .tituL a {
         font-size: 45px;
@@ -2936,6 +2951,9 @@ footer {
 
     }
 
+    .bodyLo {
+        min-height: 100vh;
+    }
     .tituL {
         a {
             font-size: 65px;
@@ -2944,6 +2962,28 @@ footer {
     }
 }
 
+@media only screen and (min-width: 1800px) {
+
+    .irA {
+        font-size: 26px;
+        position: relative;
+        left: 24rem;
+        top: 6rem;
+
+    }
+
+    .tituL {
+        a {
+            font-size: 75px;
+            left: 650px;
+        }
+    }
+
+    .bodyLo{
+        height: auto;
+        padding-top: 0;
+    }
+}
 
 @media only screen and (min-width: 2000px) {
 
@@ -3001,7 +3041,14 @@ footer {
 
 /*-----------------------------------------Empieza Nosotros------------------------------------------------*/
 
-
+.titnos{
+    color: rgb(209, 125, 0);
+    font-size: 45px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    image-rendering: auto;
+}
 .colorNos {
     background-color: rgb(51, 49, 25);
 
@@ -3009,26 +3056,14 @@ footer {
 
 .tex1 {
 
-    width: 55%;
-    position: relative;
-    left: 20%;
+    text-align: center;
     margin-top: 25px;
     color: beige;
 
 }
 
-.equip {
-    position: relative;
-    top: 40%;
-    left: 30%;
-
-}
-
 .tex2 {
-    position: relative;
-    top: 85%;
-    width: 55%;
-    left: 20%;
+    text-align: center;
     color: beige;
     margin-bottom: 25px;
 
@@ -3108,6 +3143,17 @@ footer {
         img {
 
             margin-left: 250px;
+        }
+    }
+
+}
+
+@media (min-width:1800px) {
+
+    .equip {
+        img {
+
+            margin-left: 450px;
         }
     }
 
