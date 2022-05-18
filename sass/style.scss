@@ -1303,17 +1303,6 @@ $bc in $tienda {
 .tienda--2 {
     grid-column: 2/2;
     grid-row: 1/2;
-
-    img {
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
-
-    .descripcion{
-        font-size: 14px;
-        margin-bottom: 50px;
-    }
 }
 
 .tienda--3 {
@@ -1326,19 +1315,7 @@ $bc in $tienda {
     grid-row: 1/2;
 }
 
-
-
-.tienda5 {
-
-    background-color: bisque;
-    width: 300px;
-    padding-left: 15px;
-    height: 550px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
+.tienda--5 {
     grid-column: 1/2;
     grid-row: 2/3;
 }

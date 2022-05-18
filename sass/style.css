@@ -2537,6 +2537,10 @@ footer {
   margin-top: 8px;
 }
 
+.altura {
+  height: 100vh;
+}
+
 .irA {
   color: beige;
   text-decoration: none;
@@ -2591,6 +2595,9 @@ footer {
 @media only screen and (min-width: 425px) {
   .irA {
     display: none;
+  }
+  .altura {
+    height: 10px;
   }
   .tituL a {
     font-size: 35px;
@@ -2659,9 +2666,29 @@ footer {
     position: relative;
     left: 16rem;
   }
+  .bodyLo {
+    min-height: 100vh;
+  }
   .tituL a {
     font-size: 65px;
     left: 30rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .irA {
+    font-size: 26px;
+    position: relative;
+    left: 24rem;
+    top: 6rem;
+  }
+  .tituL a {
+    font-size: 75px;
+    left: 650px;
+  }
+  .bodyLo {
+    height: auto;
+    padding-top: 0;
   }
 }
 
@@ -2703,29 +2730,27 @@ footer {
 
 /*--------------------------------Termina logeo---------------------------------------*/
 /*-----------------------------------------Empieza Nosotros------------------------------------------------*/
+.titnos {
+  color: #d17d00;
+  font-size: 45px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  image-rendering: auto;
+}
+
 .colorNos {
   background-color: #333119;
 }
 
 .tex1 {
-  width: 55%;
-  position: relative;
-  left: 20%;
+  text-align: center;
   margin-top: 25px;
   color: beige;
 }
 
-.equip {
-  position: relative;
-  top: 40%;
-  left: 30%;
-}
-
 .tex2 {
-  position: relative;
-  top: 85%;
-  width: 55%;
-  left: 20%;
+  text-align: center;
   color: beige;
   margin-bottom: 25px;
 }
@@ -2777,6 +2802,12 @@ footer {
 @media (min-width: 1440px) {
   .equip img {
     margin-left: 250px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .equip img {
+    margin-left: 450px;
   }
 }
 
