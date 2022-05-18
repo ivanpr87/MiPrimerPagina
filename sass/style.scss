@@ -939,6 +939,10 @@ footer {
     p {
         color: beige;
         margin-bottom: 0;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 74f3cc91ffc7310de06ad74c03fbc52d1473274a
     }
 }
 
@@ -1133,6 +1137,7 @@ footer {
         p {
             font-size: 20px;
             width: max-content;
+            margin-bottom: 0;
         }
 
     }
@@ -1250,19 +1255,59 @@ footer {
 
 }
 
-.tienda1 {
 
-    background-color: bisque;
-    width: 300px;
-    padding-left: 15px;
-    height: 550px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
-    grid-column: 1/2;
+
+
+$tienda: (1: rgb(83, 83, 135),
+    2: rgb(165, 81, 81),
+    3: rgb(124, 124, 55),
+    4: rgb(210, 151, 41),
+    5: rgb(86, 188, 78),
+    6: rgb(83, 83, 135),
+    7:rgb(165, 81, 81),
+    8:rgb(124, 124, 55),
+    9:rgb(210, 151, 41),
+    10:rgb(86, 188, 78),
+    11:rgb(83, 83, 135),
+    12:rgb(165, 81, 81),
+
+);
+
+@each $tien,
+$bc in $tienda {
+    .tienda--#{$tien} {
+        background-color: $bc;
+        width: 300px;
+        padding-left: 15px;
+        height: 550px;
+        text-align: center;
+        border-radius: 15px;
+        border-color: rgb(7, 2, 26);
+        border-style: solid;
+        font-size: 18px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        img {
+            width: 100%;
+            padding-right: 15px;
+            height: 50%;
+        }
+
+
+    }
+
+}
+
+.tienda--1 {
     grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.tienda--2 {
+    grid-column: 2/2;
+    grid-row: 1/2;
+<<<<<<< HEAD
 
     img {
         width: 100%;
@@ -1274,83 +1319,21 @@ footer {
         font-size: 14px;
         margin-bottom: 50px;
     }
+=======
+>>>>>>> 74f3cc91ffc7310de06ad74c03fbc52d1473274a
 }
 
-
-.titulo {
-    font-size: 30px;
-    color: rgb(138, 131, 31);
-}
-
-.tienda2 {
-
-    background-color: bisque;
-    width: 300px;
-    padding-left: 15px;
-    height: 550px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
-    grid-column: 2/3;
-    grid-row: 1/2;
-
-    img {
-        width: 100%;
-        padding-right: 15px;
-
-    }
-}
-
-
-
-
-.tienda3 {
-
-    background-color: bisque;
-    width: 300px;
-    padding-left: 15px;
-
-    height: 550px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
+.tienda--3 {
     grid-column: 3/4;
     grid-row: 1/2;
-
-    img {
-        width: 100%;
-        padding-right: 15px;
-
-    }
 }
 
-
-.tienda4 {
-
-    background-color: bisque;
-    width: 300px;
-    padding-left: 15px;
-    height: 550px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
+.tienda--4 {
     grid-column: 4/5;
     grid-row: 1/2;
-
-    img {
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-
-    }
 }
 
+<<<<<<< HEAD
 
 
 .tienda5 {
@@ -1364,188 +1347,47 @@ footer {
     border-color: rgb(7, 2, 26);
     border-style: solid;
     font-size: 18px;
+=======
+.tienda--5 {
+>>>>>>> 74f3cc91ffc7310de06ad74c03fbc52d1473274a
     grid-column: 1/2;
     grid-row: 2/3;
-
-    img {
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
-
 }
 
-
-
-.tienda6 {
-
-    background-color: bisque;
-    width: 300px;
-    padding-left: 15px;
-
-    height: 550px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
+.tienda--6 {
     grid-column: 2/3;
     grid-row: 2/3;
-
-    img {
-        width: 100%;
-        padding-right: 15px;
-
-    }
 }
 
-
-.tienda7 {
-
-    background-color: bisque;
-    width: 300px;
-    padding-left: 15px;
-
-    height: 550px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
+.tienda--7 {
     grid-column: 3/4;
     grid-row: 2/3;
-
-    img {
-        width: 100%;
-        padding-right: 15px;
-
-    }
 }
 
-
-
-.tienda8 {
-
-    background-color: bisque;
-    width: 300px;
-    padding-left: 15px;
-
-    height: 550px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
+.tienda--8 {
     grid-column: 4/5;
     grid-row: 2/3;
-
-    img {
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-
-    }
 }
 
-
-
-.tienda9 {
-
-    background-color: bisque;
-    width: 300px;
-    padding-left: 15px;
-
-    height: 550px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
+.tienda--9 {
     grid-column: 1/2;
     grid-row: 3/4;
-
-    img {
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-    }
-
 }
 
-
-
-
-.tienda_10 {
-
-    background-color: bisque;
-    width: 300px;
-    padding-left: 15px;
-    height: 550px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
+.tienda--10 {
     grid-column: 2/3;
     grid-row: 3/4;
-
-    img {
-        width: 100%;
-
-
-    }
 }
 
-
-
-
-.tienda_11 {
-
-    background-color: bisque;
-    width: 300px;
-    padding-left: 15px;
-
-    height: 550px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
+.tienda--11 {
     grid-column: 3/4;
     grid-row: 3/4;
-
-    img {
-        width: 100%;
-        padding-right: 15px;
-
-    }
 }
 
-
-
-.tienda_12 {
-
-    background-color: bisque;
-    width: 300px;
-    padding-left: 15px;
-    height: 550px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
+.tienda--12 {
     grid-column: 4/5;
     grid-row: 3/4;
-
-    img {
-        width: 100%;
-        padding-right: 15px;
-        height: 50%;
-
-    }
 }
-
-
 
 @media only screen and (min-width: 320px) {
 
@@ -1576,7 +1418,7 @@ footer {
 
     }
 
-    .tienda1 {
+    .tienda--1 {
 
 
         width: 220px;
@@ -1601,7 +1443,7 @@ footer {
     }
 
 
-    .tienda2 {
+    .tienda--2 {
 
 
         width: 220px;
@@ -1627,7 +1469,7 @@ footer {
     }
 
 
-    .tienda3 {
+    .tienda--3 {
 
         width: 220px;
         height: 450px;
@@ -1652,7 +1494,7 @@ footer {
     }
 
 
-    .tienda4 {
+    .tienda--4 {
 
         width: 220px;
         height: 450px;
@@ -1678,7 +1520,7 @@ footer {
 
 
 
-    .tienda5 {
+    .tienda--5 {
 
         width: 220px;
         height: 450px;
@@ -1702,7 +1544,7 @@ footer {
     }
 
 
-    .tienda6 {
+    .tienda--6 {
 
         width: 220px;
         height: 450px;
@@ -1726,7 +1568,7 @@ footer {
     }
 
 
-    .tienda7 {
+    .tienda--7 {
 
         width: 220px;
         height: 450px;
@@ -1749,7 +1591,7 @@ footer {
     }
 
 
-    .tienda8 {
+    .tienda--8 {
 
         width: 220px;
         height: 450px;
@@ -1775,7 +1617,7 @@ footer {
 
 
 
-    .tienda9 {
+    .tienda--9 {
 
         width: 220px;
         height: 450px;
@@ -1799,7 +1641,7 @@ footer {
     }
 
 
-    .tienda_10 {
+    .tienda--10 {
 
         width: 220px;
         height: 450px;
@@ -1822,7 +1664,7 @@ footer {
     }
 
 
-    .tienda_11 {
+    .tienda--11 {
 
         width: 220px;
         height: 450px;
@@ -1845,14 +1687,16 @@ footer {
     }
 
 
-    .tienda_12 {
+    .tienda--12 {
 
         width: 220px;
         height: 450px;
         font-size: 18px;
         grid-column: 1/2;
 
-        margin-right: 70pximg {
+        margin-right: 70px;
+
+        img {
 
             height: 250px;
 
@@ -1899,7 +1743,7 @@ footer {
 
     }
 
-    .tienda1 {
+    .tienda--1 {
 
 
         width: 250px;
@@ -1908,7 +1752,7 @@ footer {
     }
 
 
-    .tienda2 {
+    .tienda--2 {
 
 
         width: 250px;
@@ -1916,47 +1760,47 @@ footer {
     }
 
 
-    .tienda3 {
+    .tienda--3 {
 
         width: 250px;
         margin-right: 0px;
     }
 
-    .tienda4 {
-
-        width: 250px;
-        margin-right: 0px;
-
-    }
-
-    .tienda5 {
+    .tienda--4 {
 
         width: 250px;
         margin-right: 0px;
 
     }
 
-    .tienda6 {
-
-        width: 250px;
-        margin-right: 0px;
-    }
-
-    .tienda7 {
-
-        width: 250px;
-        margin-right: 0px;
-    }
-
-    .tienda8 {
+    .tienda--5 {
 
         width: 250px;
         margin-right: 0px;
 
     }
 
+    .tienda--6 {
 
-    .tienda9 {
+        width: 250px;
+        margin-right: 0px;
+    }
+
+    .tienda--7 {
+
+        width: 250px;
+        margin-right: 0px;
+    }
+
+    .tienda--8 {
+
+        width: 250px;
+        margin-right: 0px;
+
+    }
+
+
+    .tienda--9 {
 
         width: 250px;
         margin-right: 0px;
@@ -1968,16 +1812,7 @@ footer {
 
 
 
-    .tienda_10 {
-
-        width: 250px;
-        margin-right: 0px;
-    }
-
-
-
-
-    .tienda_11 {
+    .tienda--10 {
 
         width: 250px;
         margin-right: 0px;
@@ -1985,7 +1820,16 @@ footer {
 
 
 
-    .tienda_12 {
+
+    .tienda--11 {
+
+        width: 250px;
+        margin-right: 0px;
+    }
+
+
+
+    .tienda--12 {
 
         width: 250px;
         margin-right: 0px;
@@ -2008,65 +1852,65 @@ footer {
 
     }
 
-    .tienda1 {
+    .tienda--1 {
         margin-left: 20px;
 
     }
 
 
-    .tienda2 {
+    .tienda--2 {
 
 
         margin-left: 20px;
 
     }
 
-    .tienda3 {
+    .tienda--3 {
 
         margin-left: 20px;
     }
 
 
-    .tienda4 {
+    .tienda--4 {
 
         margin-left: 20px;
 
     }
 
-    .tienda5 {
-
-        margin-left: 20px;
-
-    }
-
-
-    .tienda6 {
-
-        margin-left: 20px;
-    }
-
-
-    .tienda7 {
-
-        margin-left: 20px;
-    }
-
-    .tienda8 {
+    .tienda--5 {
 
         margin-left: 20px;
 
     }
 
 
+    .tienda--6 {
 
-    .tienda9 {
+        margin-left: 20px;
+    }
+
+
+    .tienda--7 {
+
+        margin-left: 20px;
+    }
+
+    .tienda--8 {
 
         margin-left: 20px;
 
     }
 
 
-    .tienda_10 {
+
+    .tienda--9 {
+
+        margin-left: 20px;
+
+    }
+
+
+    .tienda--10 {
 
         margin-left: 20px;
     }
@@ -2074,14 +1918,14 @@ footer {
 
 
 
-    .tienda_11 {
+    .tienda--11 {
 
         margin-left: 20px;
     }
 
 
 
-    .tienda_12 {
+    .tienda--12 {
 
         margin-left: 20px;
 
@@ -2115,7 +1959,7 @@ footer {
 
     }
 
-    .tienda1 {
+    .tienda--1 {
 
         grid-column: 1/2;
 
@@ -2124,7 +1968,7 @@ footer {
 
 
 
-    .tienda2 {
+    .tienda--2 {
         grid-column: 2/3;
 
         img {
@@ -2137,20 +1981,20 @@ footer {
         }
     }
 
-    .tienda3 {
+    .tienda--3 {
 
         grid-column: 1/2;
         grid-row: 2/3;
     }
 
-    .tienda4 {
+    .tienda--4 {
 
         grid-column: 2/3;
         grid-row: 2/3;
 
     }
 
-    .tienda5 {
+    .tienda--5 {
 
         grid-column: 1/2;
         grid-row: 3/4;
@@ -2159,7 +2003,7 @@ footer {
 
 
 
-    .tienda6 {
+    .tienda--6 {
 
         grid-column: 2/3;
         grid-row: 3/4;
@@ -2168,7 +2012,7 @@ footer {
 
 
 
-    .tienda7 {
+    .tienda--7 {
 
 
         grid-column: 1/2;
@@ -2176,7 +2020,7 @@ footer {
     }
 
 
-    .tienda8 {
+    .tienda--8 {
 
 
         grid-column: 2/3;
@@ -2184,7 +2028,7 @@ footer {
     }
 
 
-    .tienda9 {
+    .tienda--9 {
 
 
         grid-column: 1/2;
@@ -2195,7 +2039,7 @@ footer {
 
 
 
-    .tienda_10 {
+    .tienda--10 {
 
 
         grid-column: 2/3;
@@ -2204,14 +2048,14 @@ footer {
 
 
 
-    .tienda_11 {
+    .tienda--11 {
 
 
         grid-column: 1/2;
         grid-row: 6/7;
     }
 
-    .tienda_12 {
+    .tienda--12 {
 
         grid-column: 2/3;
         grid-row: 6/7;
@@ -2240,7 +2084,7 @@ footer {
 
     }
 
-    .tienda1 {
+    .tienda--1 {
 
 
         grid-column: 1/2;
@@ -2251,7 +2095,7 @@ footer {
 
 
 
-    .tienda2 {
+    .tienda--2 {
 
         grid-column: 2/3;
         grid-row: 1/2;
@@ -2260,7 +2104,7 @@ footer {
 
 
 
-    .tienda3 {
+    .tienda--3 {
 
 
         grid-column: 3/4;
@@ -2268,7 +2112,7 @@ footer {
     }
 
 
-    .tienda4 {
+    .tienda--4 {
 
         grid-column: 1/2;
         grid-row: 2/3;
@@ -2277,7 +2121,7 @@ footer {
 
 
 
-    .tienda5 {
+    .tienda--5 {
 
         grid-column: 2/3;
         grid-row: 2/3;
@@ -2287,7 +2131,7 @@ footer {
 
 
 
-    .tienda6 {
+    .tienda--6 {
 
         grid-column: 3/4;
         grid-row: 2/3;
@@ -2296,7 +2140,7 @@ footer {
 
 
 
-    .tienda7 {
+    .tienda--7 {
 
 
         grid-column: 1/2;
@@ -2304,13 +2148,13 @@ footer {
     }
 
 
-    .tienda8 {
+    .tienda--8 {
         grid-column: 2/3;
         grid-row: 3/4;
     }
 
 
-    .tienda9 {
+    .tienda--9 {
 
         grid-column: 3/4;
         grid-row: 3/4;
@@ -2320,7 +2164,7 @@ footer {
 
 
 
-    .tienda_10 {
+    .tienda--10 {
 
         grid-column: 1/2;
         grid-row: 4/5;
@@ -2329,14 +2173,14 @@ footer {
 
 
 
-    .tienda_11 {
+    .tienda--11 {
 
         grid-column: 2/3;
         grid-row: 4/5;
     }
 
 
-    .tienda_12 {
+    .tienda--12 {
 
 
         grid-column: 3/4;
@@ -2365,7 +2209,7 @@ footer {
 
     }
 
-    .tienda1 {
+    .tienda--1 {
 
 
         grid-column: 1/2;
@@ -2376,7 +2220,7 @@ footer {
 
 
 
-    .tienda2 {
+    .tienda--2 {
 
         grid-column: 2/3;
         grid-row: 1/2;
@@ -2385,7 +2229,7 @@ footer {
 
 
 
-    .tienda3 {
+    .tienda--3 {
 
 
         grid-column: 3/4;
@@ -2393,7 +2237,7 @@ footer {
     }
 
 
-    .tienda4 {
+    .tienda--4 {
 
         grid-column: 4/5;
         grid-row: 1/2;
@@ -2402,7 +2246,7 @@ footer {
 
 
 
-    .tienda5 {
+    .tienda--5 {
 
         grid-column: 1/2;
         grid-row: 2/3;
@@ -2412,7 +2256,7 @@ footer {
 
 
 
-    .tienda6 {
+    .tienda--6 {
 
         grid-column: 2/3;
         grid-row: 2/3;
@@ -2421,7 +2265,7 @@ footer {
 
 
 
-    .tienda7 {
+    .tienda--7 {
 
 
         grid-column: 3/4;
@@ -2429,13 +2273,13 @@ footer {
     }
 
 
-    .tienda8 {
+    .tienda--8 {
         grid-column: 4/5;
         grid-row: 2/3;
     }
 
 
-    .tienda9 {
+    .tienda--9 {
 
         grid-column: 1/2;
         grid-row: 3/4;
@@ -2445,7 +2289,7 @@ footer {
 
 
 
-    .tienda_10 {
+    .tienda--10 {
 
         grid-column: 2/3;
         grid-row: 3/4;
@@ -2454,14 +2298,14 @@ footer {
 
 
 
-    .tienda_11 {
+    .tienda--11 {
 
         grid-column: 3/4;
         grid-row: 3/4;
     }
 
 
-    .tienda_12 {
+    .tienda--12 {
 
 
         grid-column: 4/5;
@@ -2491,7 +2335,7 @@ footer {
 
     }
 
-    .tienda1 {
+    .tienda--1 {
 
         width: 300px;
         grid-column: 1/2;
@@ -2502,7 +2346,7 @@ footer {
 
 
 
-    .tienda2 {
+    .tienda--2 {
         width: 300px;
         grid-column: 2/3;
         grid-row: 1/2;
@@ -2511,14 +2355,14 @@ footer {
 
 
 
-    .tienda3 {
+    .tienda--3 {
         width: 300px;
         grid-column: 3/4;
         grid-row: 1/2;
     }
 
 
-    .tienda4 {
+    .tienda--4 {
         width: 300px;
         grid-column: 4/5;
         grid-row: 1/2;
@@ -2527,7 +2371,7 @@ footer {
 
 
 
-    .tienda5 {
+    .tienda--5 {
         width: 300px;
         grid-column: 5/6;
         grid-row: 1/2;
@@ -2537,7 +2381,7 @@ footer {
 
 
 
-    .tienda6 {
+    .tienda--6 {
 
         grid-column: 1/2;
         grid-row: 2/3;
@@ -2546,21 +2390,21 @@ footer {
 
 
 
-    .tienda7 {
+    .tienda--7 {
         width: 300px;
         grid-column: 2/3;
         grid-row: 2/3;
     }
 
 
-    .tienda8 {
+    .tienda--8 {
         width: 300px;
         grid-column: 3/4;
         grid-row: 2/3;
     }
 
 
-    .tienda9 {
+    .tienda--9 {
         width: 300px;
         grid-column: 4/5;
         grid-row: 2/3;
@@ -2570,7 +2414,7 @@ footer {
 
 
 
-    .tienda_10 {
+    .tienda--10 {
         width: 300px;
         grid-column: 5/6;
         grid-row: 2/3;
@@ -2579,14 +2423,14 @@ footer {
 
 
 
-    .tienda_11 {
+    .tienda--11 {
         width: 300px;
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
 
-    .tienda_12 {
+    .tienda--12 {
         width: 300px;
         grid-column: 2/3;
         grid-row: 3/4;
@@ -2817,6 +2661,7 @@ footer {
 .bg {
     background-image: url(../imagenes/logeo2.png);
     background-position: center center;
+    height: 500px;
 
 
 }
@@ -2827,7 +2672,7 @@ footer {
         display: none;
 
     }
-
+    
 
     .tituL {
         font-size: 30px;
@@ -2838,11 +2683,13 @@ footer {
     }
 }
 
+
 @media only screen and (min-width: 375px) {
 
     .irA {
         display: none;
     }
+
 
     .tituL {
         a {
@@ -2860,9 +2707,12 @@ footer {
 
     }
 
+<<<<<<< HEAD
     .altura{
         height: 10px;
     }
+=======
+>>>>>>> 74f3cc91ffc7310de06ad74c03fbc52d1473274a
 
     .tituL {
         a {
@@ -2882,6 +2732,7 @@ footer {
         left: 4rem;
         top: 4rem;
 }
+
 
 
     .tituL a {
@@ -3277,15 +3128,7 @@ footer {
 
 .anime2 {
 
-    width: 300px;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    background-color: rgb(62, 15, 105);
-    font-size: 18px;
-    text-align: center;
-    margin: 55px;
-    grid-column: 2/3;
+    @extend .anime1;
 
     img {
         height: 350px;
@@ -3305,15 +3148,7 @@ footer {
 
 .anime3 {
 
-    width: 300px;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
-    background-color: rgb(62, 15, 105);
-    text-align: center;
-    margin: 55px;
-    grid-column: 3/4;
+    @extend .anime1;
 
     img {
         height: 350px;
@@ -3333,15 +3168,7 @@ footer {
 
 .anime4 {
 
-    width: 300px;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
-    background-color: rgb(62, 15, 105);
-    text-align: center;
-    margin: 55px;
-    grid-column: 4/5;
+    @extend .anime1;
 
     img {
         height: 350px;
@@ -3360,15 +3187,7 @@ footer {
 
 .anime5 {
 
-    width: 300px;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
-    text-align: center;
-    background-color: rgb(62, 15, 105);
-    margin: 55px;
-    grid-column: 5/6;
+    @extend .anime1;
 
     img {
         height: 350px;
@@ -3386,18 +3205,7 @@ footer {
 }
 
 .anime6 {
-
-    width: 300px;
-    border-radius: 15px;
-    border-color: rgb(7, 2, 26);
-    border-style: solid;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 20px;
-    background-color: rgb(62, 15, 105);
-    margin-bottom: 25px;
-    margin: 55px;
-    grid-column: 1/2;
+    @extend .anime1;
 
     img {
         height: 350px;
@@ -3419,14 +3227,23 @@ footer {
     color: rgb(50, 26, 184);
 }
 
-.anime7 {
 
-    width: 300px;
+
+@mixin tamaño ($ancho, $letra, $fondocolor, $bodercolor) {
+
+    width: $ancho;
+    font-size: $letra;
+    background-color: $fondocolor;
+    border-color: $bodercolor;
+}
+
+
+
+.anime7 {
+    @include tamaño(300px, 18px, rgb(62, 15, 105), rgb(7, 2, 26));
+
     border-radius: 15px;
-    border-color: rgb(7, 2, 26);
     border-style: solid;
-    background-color: rgb(62, 15, 105);
-    font-size: 18px;
     text-align: center;
     margin: 55px;
     grid-column: 2/3;
@@ -3447,13 +3264,10 @@ footer {
 }
 
 .anime8 {
+    @include tamaño(300px, 18px, rgb(62, 15, 105), rgb(7, 2, 26));
 
-    width: 300px;
     border-radius: 15px;
-    border-color: rgb(7, 2, 26);
     border-style: solid;
-    background-color: rgb(62, 15, 105);
-    font-size: 18px;
     text-align: center;
     margin: 55px;
     grid-column: 3/4;
@@ -3474,13 +3288,10 @@ footer {
 }
 
 .anime9 {
+    @include tamaño(300px, 18px, rgb(62, 15, 105), rgb(7, 2, 26));
 
-    width: 300px;
     border-radius: 15px;
-    border-color: rgb(7, 2, 26);
     border-style: solid;
-    font-size: 18px;
-    background-color: rgb(62, 15, 105);
     text-align: center;
     margin: 55px;
     grid-column: 4/5;
@@ -3503,13 +3314,9 @@ footer {
 
 
 .anime10 {
-
-    width: 300px;
+    @include tamaño(300px, 18px, rgb(62, 15, 105), rgb(7, 2, 26));
     border-radius: 15px;
-    border-color: rgb(7, 2, 26);
     border-style: solid;
-    font-size: 18px;
-    background-color: rgb(62, 15, 105);
     text-align: center;
     margin: 55px;
     grid-column: 5/6;
@@ -3531,14 +3338,10 @@ footer {
 }
 
 .anime11 {
-
-    width: 300px;
+    @include tamaño(300px, 18px, rgb(62, 15, 105), rgb(7, 2, 26));
     border-radius: 15px;
-    border-color: rgb(7, 2, 26);
     border-style: solid;
-    font-size: 18px;
     text-align: center;
-    background-color: rgb(62, 15, 105);
     margin: 55px;
     grid-column: 1/2;
 
@@ -3558,15 +3361,12 @@ footer {
 }
 
 .anime12 {
+    @include tamaño(300px, 18px, rgb(62, 15, 105), rgb(7, 2, 26));
 
-    width: 300px;
     border-radius: 15px;
-    border-color: rgb(7, 2, 26);
     border-style: solid;
-    font-size: 18px;
     text-align: center;
     margin-top: 20px;
-    background-color: rgb(62, 15, 105);
     margin-bottom: 25px;
     margin: 55px;
     grid-column: 2/3;
