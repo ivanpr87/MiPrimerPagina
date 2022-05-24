@@ -1251,6 +1251,16 @@ footer {
 
 }
 
+.boton{
+    background-color: #12295e;
+    color: #ffffff;
+    width: 150px;
+    height: 30px;
+    border-radius: 150px;
+    margin-top: 20px;
+    
+}
+
 
 
 
@@ -2434,6 +2444,7 @@ $bc in $tienda {
 
 .irR:hover {
     color: red;
+    transition: .8s;
 }
 
 :root {
@@ -2505,6 +2516,11 @@ $bc in $tienda {
             left: 5rem;
             top: 8px;
         }
+
+        a:hover {
+            color: red;
+            transition: .8s;
+        }
     }
 
     .row {
@@ -2515,7 +2531,10 @@ $bc in $tienda {
 
     .irR {
         display: none;
+
+
     }
+
 }
 
 @media (min-width: 425px) {
@@ -2531,7 +2550,7 @@ $bc in $tienda {
 
     .tituR {
         a {
-            font-size: 45px;
+
             left: 18rem;
         }
     }
@@ -2551,6 +2570,7 @@ $bc in $tienda {
     .irR {
         display: flex;
         left: 15px;
+
     }
 
 
@@ -2583,11 +2603,31 @@ $bc in $tienda {
     }
 
     .irR {
-        display: flex;
+
         left: 220px;
     }
 
 }
+
+
+@media (min-width: 1800px) {
+
+    .tituR {
+        a {
+
+            left: 47rem;
+        }
+    }
+
+    .irR {
+
+        left: 420px;
+    }
+
+}
+
+
+
 
 /*---------------------------termina pag registro-------------------------*/
 
@@ -2601,9 +2641,7 @@ $bc in $tienda {
     }
 }
 
-.altura {
-    height: 100vh;
-}
+
 
 .irA {
     color: beige;
@@ -2638,28 +2676,33 @@ $bc in $tienda {
         display: none;
 
     }
-    
+
 
     .tituL {
+        position: relative;
         font-size: 30px;
         left: 5rem;
         height: 50px;
         margin-top: 10px;
         width: max-content;
+
+        a:hover {
+            color: red;
+            transition: .8s;
+        }
     }
+
+
 }
+
 
 
 @media only screen and (min-width: 375px) {
 
-    .irA {
-        display: none;
-    }
-
 
     .tituL {
         a {
-            font-size: 30px;
+            font-size: 35px;
             position: relative;
             left: 30px;
         }
@@ -2668,18 +2711,11 @@ $bc in $tienda {
 
 @media only screen and (min-width: 425px) {
 
-    .irA {
-        display: none;
 
-    }
-
-    .altura{
-        height: 10px;
-    }
 
     .tituL {
         a {
-            font-size: 35px;
+            font-size: 40px;
             position: relative;
             left: 50px;
         }
@@ -2691,16 +2727,18 @@ $bc in $tienda {
     .irA {
         display: flex;
         position: relative;
-        font-size: 15px;
-        left: 4rem;
+        font-size: 18px;
+        left: 3rem;
         top: 4rem;
-}
+    }
 
 
 
-    .tituL a {
-        font-size: 45px;
-        left: 12rem;
+    .tituL {
+        a {
+            font-size: 45px;
+            left: 12rem;
+        }
     }
 }
 
@@ -2708,13 +2746,14 @@ $bc in $tienda {
 
     .irA {
         font-size: 24px;
-        left: 1rem;
+        left: 3rem;
+        top: 6rem;
     }
 
     .tituL {
         a {
             font-size: 65px;
-            left: 16rem;
+            left: 18rem;
         }
     }
 }
@@ -2722,55 +2761,32 @@ $bc in $tienda {
 @media only screen and (min-width: 1200px) {
 
     .irA {
-        display: flex;
-        font-size: 24px;
-        position: relative;
-        left: 8rem;
+        left: 9rem;
 
     }
 
     .tituL {
         a {
-            font-size: 65px;
-            left: 22rem;
+
+            left: 24rem;
         }
     }
 }
 
-@media only screen and (min-width: 1220px) {
 
-    .irA {
 
-        font-size: 24px;
-        position: relative;
-        left: 28rem;
-
-    }
-
-    .tituL {
-        a {
-            font-size: 65px;
-            left: 42rem;
-        }
-    }
-}
 
 @media only screen and (min-width: 1440px) {
 
     .irA {
 
-        font-size: 24px;
-        position: relative;
         left: 16rem;
 
     }
 
-    .bodyLo {
-        min-height: 100vh;
-    }
+
     .tituL {
         a {
-            font-size: 65px;
             left: 30rem;
         }
     }
@@ -2779,83 +2795,26 @@ $bc in $tienda {
 @media only screen and (min-width: 1800px) {
 
     .irA {
-        font-size: 26px;
-        position: relative;
-        left: 24rem;
-        top: 6rem;
+
+        left: 28rem;
 
     }
+
 
     .tituL {
         a {
-            font-size: 75px;
-            left: 650px;
-        }
-    }
-
-    .bodyLo{
-        height: auto;
-        padding-top: 0;
-    }
-}
-
-@media only screen and (min-width: 2000px) {
-
-    .irA {
-        font-size: 26px;
-        position: relative;
-        left: 30rem;
-
-    }
-
-    .tituL {
-        a {
-            font-size: 75px;
-            left: 750px;
+            left: 42rem;
         }
     }
 }
 
-@media only screen and (min-width: 2400px) {
-
-    .irA {
-        font-size: 26px;
-        position: relative;
-        left: 700px;
-
-    }
-
-    .tituL {
-        a {
-            font-size: 75px;
-            left: 950px;
-        }
-    }
-}
-
-@media only screen and (min-width: 2500px) {
-
-    .irA {
-        font-size: 26px;
-        position: relative;
-        left: 700px;
-
-    }
-
-    .tituL {
-        a {
-            font-size: 75px;
-            left: 950px;
-        }
-    }
-}
 
 /*--------------------------------Termina logeo---------------------------------------*/
 
 
 /*-----------------------------------------Empieza Nosotros------------------------------------------------*/
 
-.titnos{
+.titnos {
     color: rgb(209, 125, 0);
     font-size: 45px;
     text-align: center;
@@ -2863,8 +2822,9 @@ $bc in $tienda {
     padding-bottom: 50px;
     image-rendering: auto;
 }
+
 .colorNos {
-    background-color: rgb(51, 49, 25);
+    background-color: rgb(37, 35, 32);
 
 }
 
@@ -2883,6 +2843,16 @@ $bc in $tienda {
 
 }
 
+.equip {
+    img {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 400px;
+        width: 400px;
+        border-radius: 100px;
+        
+    }
+}
 
 @media (min-width:320px) {
 
